@@ -65,7 +65,7 @@ resetGame.addEventListener("click", function () {
     isRunning = false
 })
 
-let timeLeft = 60
+let timeLeft = 2
 let intervalID
 function startTimer() {
     intervalID = setInterval(function () {
@@ -74,8 +74,19 @@ function startTimer() {
             gameClock.textContent = timeLeft
         } else {
             clearInterval(intervalID)
+            endGame()
         }
     }, 1000)
+}
+
+function endGame() {
+    if (homeScore > guestScore) {
+        result = "Home Wins"
+    } else if (guestScore > homeScore) {
+        result = "Guest Wins"
+    } else {
+        result = "It's a Draw"
+    }
 }
 
 let isStarted = false
