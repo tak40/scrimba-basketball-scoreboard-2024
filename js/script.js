@@ -60,6 +60,9 @@ resetGame.addEventListener("click", function () {
     gameClock.textContent = 60
     timeLeft = 60
     disableBtn()
+    startNewGame.textContent = "Start"
+    isStarted = false
+    isRunning = false
 })
 
 let timeLeft = 60
@@ -75,10 +78,36 @@ function startTimer() {
     }, 1000)
 }
 
+let isStarted = false
+let isRunning = false
 startNewGame.addEventListener("click", function () {
+    if (!isStarted) {
+        startTimer()
+        enableBtn()
+        isStarted = true
+        isRunning = true
+        return (startNewGame.textContent = "Pause")
+    }
+    if (isRunning) {
+        pauseGame()
+    } else {
+        restartGame()
+    }
+})
+
+function pauseGame() {
+    clearInterval(intervalID)
+    disableBtn()
+    isRunning = false
+    startNewGame.textContent = "Start"
+}
+
+function restartGame() {
     startTimer()
     enableBtn()
-})
+    isRunning = true
+    startNewGame.textContent = "Pause"
+}
 
 function enableBtn() {
     addPointsBtn.forEach(function (button) {
