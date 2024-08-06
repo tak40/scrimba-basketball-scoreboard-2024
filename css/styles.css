@@ -1,13 +1,16 @@
 :root {
+    --color-primary-bg: #efefef;
+    --color-secondary-bg: #d1d1d1;
     --color-light-blue: #9aabd8;
     --color-black: #080001;
     --color-light-gray: #eeeeee;
     --color-pink: #f94f6d;
     --color-dark-blue: #1b244a;
     --font-primary: "Verdana", sans-serif;
-    --font-secondary: "Roboto", sans-serif;
     --font-timer: "Cursed Timer ULiL", sans-serif;
 }
+
+/* ----- GLOBAL STYLES ----- */
 
 *,
 *::before,
@@ -21,46 +24,78 @@
     font: inherit;
 }
 
-html {
-    color-scheme: dark light;
-}
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     min-height: 100vh;
-    line-height: 1.5;
     font-family: var(--font-primary);
+    line-height: 1.5;
+    background-color: var(--color-primary-bg);
     -webkit-font-smoothing: antialiased;
 }
 
-/* ----- HEADER ----- */
-header {
-    background-color: var(--color-light-gray);
-    padding: 1rem 0;
-    color: var(--color-black);
-    font-family: var(--font-secondary);
+/* ----- TYPOGRAPHY ----- */
+
+h1,
+.score,
+.points-controls,
+.game-clock,
+.clock-btn {
+    font-family: var(--font-timer);
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 2rem;
 }
 
 h3 {
+    color: var(--color-light-gray);
     font-size: 3rem;
     font-weight: bold;
-    color: var(--color-light-gray);
 }
 
 .clock-section h3 {
     font-size: 2em;
+}
+
+.score {
+    color: var(--color-pink);
+    font-size: 6rem;
+}
+
+.points-btn {
+    color: var(--color-light-blue);
+    font-size: 1.5rem;
+}
+
+.game-clock {
+    color: var(--color-pink);
+    font-size: 4rem;
+}
+
+.clock-btn {
+    color: var(--color-light-blue);
+    font-size: 2rem;
+}
+
+/* ----- HEADER ----- */
+
+header {
+    padding: 1.5rem 0;
+    background-color: var(--color-secondary-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ----- MAIN ----- */
@@ -75,6 +110,8 @@ h3 {
     padding: 4em 8em;
     background-color: var(--color-dark-blue);
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08),
+        0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .scoreboard-wrapper {
@@ -93,10 +130,7 @@ h3 {
 
 .score {
     width: 2.25em;
-    font-size: 6rem;
     background-color: var(--color-black);
-    color: var(--color-pink);
-    font-family: var(--font-timer);
 }
 
 .points-controls {
@@ -104,15 +138,21 @@ h3 {
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-    font-family: var(--font-timer);
+}
+
+.points-btn,
+.clock-btn {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
 }
 
 .points-btn {
-    font-size: 1.5rem;
-    width: 2.5em;
     height: 2.5em;
+    width: 2.5em;
     background-color: var(--color-dark-blue);
-    color: var(--color-light-blue);
     border: 2px solid var(--color-light-blue);
     border-radius: 5px;
 }
@@ -126,11 +166,8 @@ h3 {
 }
 
 .game-clock {
-    font-size: 4rem;
     width: 2.5em;
     background-color: var(--color-black);
-    font-family: var(--font-timer);
-    color: var(--color-pink);
 }
 
 .clock-controls {
@@ -139,14 +176,14 @@ h3 {
 }
 
 .clock-btn {
-    font-family: var(--font-timer);
-    font-size: 2em;
     padding: 0.25em 0.5em;
+    background-color: var(--color-dark-blue);
+    border: 2px solid var(--color-light-blue);
+    border-radius: 5px;
 }
 
 /* ----- FOOTER ----- */
 footer {
-    background-color: var(--color-light-gray);
-    color: var(--color-black);
     padding: 2em 0;
+    background-color: var(--color-secondary-bg);
 }
