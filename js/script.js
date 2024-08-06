@@ -2,8 +2,8 @@
 const homeScoreDisplay = document.getElementById("home-score")
 const guestScoreDisplay = document.getElementById("guest-score")
 const gameClockDisplay = document.getElementById("game-clock")
-const startNewGame = document.getElementById("start-new-game")
-const resetGame = document.getElementById("reset-game")
+const startNewGameBtn = document.getElementById("start-new-game")
+const resetGameBtn = document.getElementById("reset-game")
 const addPointsBtn = document.querySelectorAll(".points-btn")
 
 // State Variables
@@ -20,9 +20,9 @@ disableBtn()
 // Event Listeners
 document
     .querySelector(".scoreboard-wrapper")
-    .addEventListener("click", processScoreButtonClick)
-resetGame.addEventListener("click", resetGame)
-startNewGame.addEventListener("click", toggleGameStartPause)
+    .addEventListener("click", handleScoreButtonClick)
+resetGameBtn.addEventListener("click", resetGame)
+startNewGameBtn.addEventListener("click", handleStartPause)
 
 // Functions
 
@@ -40,9 +40,9 @@ function startTimer() {
 }
 
 // Handle starting or pausing the game
-function toggleGameStartPause() {
+function handleStartPause() {
     if (!isStarted) {
-        initializeGame()
+        startGame()
     }
     if (isRunning) {
         pauseGame()
@@ -51,17 +51,17 @@ function toggleGameStartPause() {
     }
 }
 
-// Initialize the game
-function initializeGame() {
+// Start a game
+function startGame() {
     startTimer()
     enableBtn()
     isStarted = true
     isRunning = true
-    startNewGame.textContent = "Pause"
+    startNewGameBtn.textContent = "Pause"
 }
 
 // Handle button clicks for scoring
-function processScoreButtonClick(event) {
+function handleScoreButtonClick(event) {
     if (event.target.classList.contains("points-btn")) {
         const team = event.target.dataset.team
         const points = Number(event.target.dataset.points)
@@ -78,7 +78,7 @@ function pauseGame() {
     clearInterval(intervalID)
     disableBtn()
     isRunning = false
-    startNewGame.textContent = "Start"
+    startNewGameBtn.textContent = "Start"
 }
 
 // Restart the game
@@ -86,7 +86,7 @@ function restartGame() {
     startTimer()
     enableBtn()
     isRunning = true
-    startNewGame.textContent = "Pause"
+    startNewGameBtn.textContent = "Pause"
 }
 
 // Update the home team's score
@@ -126,13 +126,13 @@ function resetClock() {
 
 // Reset the game state
 function resetGameState() {
-    startNewGame.textContent = "Start"
+    startNewGameBtn.textContent = "Start"
     isStarted = false
     isRunning = false
 }
 
 // End the game and determine the winner
-function endGame() {
+function declareWinner() {
     let result
     if (homeScore > guestScore) {
         result = "Home Wins"

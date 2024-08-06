@@ -142,11 +142,13 @@ header {
 
 .points-btn,
 .clock-btn {
+    cursor: pointer;
     background-image: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0.1) 0%,
         rgba(0, 0, 0, 0.1) 100%
     );
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .points-btn {
@@ -155,6 +157,19 @@ header {
     background-color: var(--color-dark-blue);
     border: 2px solid var(--color-light-blue);
     border-radius: 5px;
+}
+
+/* Hover and Active States */
+.points-btn:hover,
+.clock-btn:hover {
+    background-color: var(--color-light-blue);
+    color: var(--color-dark-blue);
+}
+
+.points-btn:active,
+.clock-btn:active {
+    background-color: var(--color-pink);
+    color: var(--color-dark-blue);
 }
 
 /* ----- CLOCK SECTION ----- */
