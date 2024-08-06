@@ -1,55 +1,50 @@
+// DOM Elements
 const homeScoreDisplay = document.getElementById("home-score")
 const guestScoreDisplay = document.getElementById("guest-score")
-
-const home1PointButton = document.getElementById("home-1point")
-const home2PointsButton = document.getElementById("home-2points")
-const home3PointsButton = document.getElementById("home-3points")
-
-const guest1PointButton = document.getElementById("guest-1point")
-const guest2PointsButton = document.getElementById("guest-2points")
-const guest3PointsButton = document.getElementById("guest-3points")
 
 const gameClock = document.getElementById("game-clock")
 const resetGame = document.getElementById("reset-game")
 
 const startNewGame = document.getElementById("start-new-game")
 
-const addPointsBtn = document.querySelectorAll(".add-points-btn")
+const addPointsBtn = document.querySelectorAll(".points-btn")
 
 // Initialize the scores
 let homeScore = 0
 let guestScore = 0
 
-// Attach event listeners to the buttons
-home1PointButton.addEventListener("click", () => {
-    homeScore++
+document
+    .querySelector(".scoreboard-wrapper")
+    .addEventListener("click", handleButtonClick)
+
+function handleButtonClick(event) {
+    if (event.target.classList.contains("points-btn")) {
+        const team = event.target.dataset.team
+        const points = Number(event.target.dataset.points)
+        console.log(typeof points)
+        if (team === "home") {
+            updateHomeScore(points)
+        } else if (team === "guest") {
+            updateGuestScore(points)
+        }
+    }
+}
+
+function updateHomeScore(points) {
+    homeScore += points
     homeScoreDisplay.textContent = homeScore
-})
+}
 
-home2PointsButton.addEventListener("click", () => {
-    homeScore += 2
-    homeScoreDisplay.textContent = homeScore
-})
-
-home3PointsButton.addEventListener("click", () => {
-    homeScore += 3
-    homeScoreDisplay.textContent = homeScore
-})
-
-guest1PointButton.addEventListener("click", () => {
-    guestScore++
+function updateGuestScore(points) {
+    guestScore += points
     guestScoreDisplay.textContent = guestScore
-})
+}
 
-guest2PointsButton.addEventListener("click", () => {
-    guestScore += 2
-    guestScoreDisplay.textContent = guestScore
-})
-
-guest3PointsButton.addEventListener("click", () => {
-    guestScore += 3
-    guestScoreDisplay.textContent = guestScore
-})
+function addPoints(button, points, updateScore) {
+    button.addEventListener("click", function () {
+        updateScore(points)
+    })
+}
 
 resetGame.addEventListener("click", function () {
     clearInterval(intervalID)
