@@ -4,6 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Basketball Scoreboard</title>
+        <link
+            href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
@@ -12,42 +20,63 @@
             <h2>Scrimba Frontend Career Path Project</h2>
         </header>
         <main class="main-container">
-            <section>
-                <h3>HOME</h3>
-                <div class="score-container">
-                    <p id="home-score" class="home-score" aria-live="polite">
+            <div class="scoreboard-wrapper">
+                <section class="team-scoreboard">
+                    <h3>HOME</h3>
+                    <p
+                        id="home-score"
+                        class="home-score score"
+                        aria-live="polite"
+                    >
                         0
                     </p>
-                </div>
-                <div class="add-points">
-                    <button id="home-1point" class="add-points-btn" disabled>+1</button>
-                    <button id="home-2points" class="add-points-btn" disabled>+2</button>
-                    <button id="home-3points" class="add-points-btn" disabled>+3</button>
-                </div>
-            </section>
-            <section>
-                <h3>GUEST</h3>
-                <div class="score-container">
-                    <p id="guest-score" class="guest-score" aria-live="polite">
+                    <div class="points-controls">
+                        <button id="home-1point" class="points-btn" disabled>
+                            +1
+                        </button>
+                        <button id="home-2points" class="points-btn" disabled>
+                            +2
+                        </button>
+                        <button id="home-3points" class="points-btn" disabled>
+                            +3
+                        </button>
+                    </div>
+                </section>
+                <section class="team-scoreboard">
+                    <h3>GUEST</h3>
+                    <p
+                        id="guest-score"
+                        class="guest-score score"
+                        aria-live="polite"
+                    >
                         0
                     </p>
-                </div>
-                <div class="add-points">
-                    <button id="guest-1point" class="add-points-btn" disabled>+1</button>
-                    <button id="guest-2points" class="add-points-btn" disabled>+2</button>
-                    <button id="guest-3points" class="add-points-btn" disabled>+3</button>
-                </div>
-            </section>
-            <section>
+                    <div class="points-controls">
+                        <button id="guest-1point" class="points-btn" disabled>
+                            +1
+                        </button>
+                        <button id="guest-2points" class="points-btn" disabled>
+                            +2
+                        </button>
+                        <button id="guest-3points" class="points-btn" disabled>
+                            +3
+                        </button>
+                    </div>
+                </section>
+            </div>
+            <section class="clock-section">
                 <h3>GAME CLOCK</h3>
-                <div class="game-clock">
-                    <p id="game-clock" class="game-clock" aria-live="polite">60</p>
-                    <div class="controls">
-                        <button id="start-new-game">Start</button>
-                        <button id="reset-game">Reset</button>
+                <div class="clock-display">
+                    <p id="game-clock" class="game-clock" aria-live="polite">
+                        60
+                    </p>
+                    <div class="clock-controls">
+                        <button id="start-new-game" class="clock-btn">
+                            Start
+                        </button>
+                        <button id="reset-game" class="clock-btn">Reset</button>
                     </div>
                 </div>
-            </section>
             </section>
         </main>
         <footer>

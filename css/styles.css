@@ -1,7 +1,19 @@
+:root {
+    --color-light-blue: #9aabd8;
+    --color-black: #080001;
+    --color-light-gray: #eeeeee;
+    --color-pink: #f94f6d;
+    --color-dark-blue: #1b244a;
+    --font-primary: "Verdana", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+    --font-timer: "Cursed Timer ULiL", sans-serif;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 * {
@@ -14,12 +26,127 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
     min-height: 100vh;
     line-height: 1.5;
+    font-family: var(--font-primary);
     -webkit-font-smoothing: antialiased;
 }
 
+/* ----- HEADER ----- */
+header {
+    background-color: var(--color-light-gray);
+    padding: 1rem 0;
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-light-gray);
+}
+
+.clock-section h3 {
+    font-size: 2em;
+}
+
+/* ----- MAIN ----- */
+
 .main-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin: 0 auto;
+    padding: 4em 8em;
+    background-color: var(--color-dark-blue);
+    border-radius: 10px;
+}
+
+.scoreboard-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 8em;
+}
+
+.team-scoreboard,
+.clock-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+}
+
+.score {
+    width: 2.25em;
+    font-size: 6rem;
+    background-color: var(--color-black);
+    color: var(--color-pink);
+    font-family: var(--font-timer);
+}
+
+.points-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    font-family: var(--font-timer);
+}
+
+.points-btn {
+    font-size: 1.5rem;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: var(--color-dark-blue);
+    color: var(--color-light-blue);
+    border: 2px solid var(--color-light-blue);
+    border-radius: 5px;
+}
+
+/* ----- CLOCK SECTION ----- */
+
+.clock-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.game-clock {
+    font-size: 4rem;
+    width: 2.5em;
+    background-color: var(--color-black);
+    font-family: var(--font-timer);
+    color: var(--color-pink);
+}
+
+.clock-controls {
+    display: flex;
+    gap: 1.5em;
+}
+
+.clock-btn {
+    font-family: var(--font-timer);
+    font-size: 2em;
+    padding: 0.25em 0.5em;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: var(--color-light-gray);
+    color: var(--color-black);
+    padding: 2em 0;
 }

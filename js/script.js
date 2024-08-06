@@ -65,7 +65,7 @@ resetGame.addEventListener("click", function () {
     isRunning = false
 })
 
-let timeLeft = 2
+let timeLeft = 60
 let intervalID
 function startTimer() {
     intervalID = setInterval(function () {
