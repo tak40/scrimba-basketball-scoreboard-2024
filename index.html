@@ -30,12 +30,17 @@
                     >
                         0
                     </p>
-                    <div class="points-controls">
+                    <div
+                        class="points-controls"
+                        aria-label="Home team scoring buttons"
+                    >
                         <button
                             class="points-btn"
                             data-team="home"
                             data-points="1"
                             disabled
+                            disabled
+                            aria-label="Add 1 point to Home"
                         >
                             +1
                         </button>
@@ -44,6 +49,8 @@
                             data-team="home"
                             data-points="2"
                             disabled
+                            disabled
+                            aria-label="Add 2 points to Home"
                         >
                             +2
                         </button>
@@ -52,6 +59,8 @@
                             data-team="home"
                             data-points="3"
                             disabled
+                            disabled
+                            aria-label="Add 3 points to Home"
                         >
                             +3
                         </button>
@@ -66,12 +75,16 @@
                     >
                         0
                     </p>
-                    <div class="points-controls">
+                    <div
+                        class="points-controls"
+                        aria-label="Guest team scoring buttons"
+                    >
                         <button
                             class="points-btn"
                             data-team="guest"
                             data-points="1"
                             disabled
+                            aria-label="Add 1 point to Guest"
                         >
                             +1
                         </button>
@@ -80,6 +93,7 @@
                             data-team="guest"
                             data-points="2"
                             disabled
+                            aria-label="Add 2 points to Guest"
                         >
                             +2
                         </button>
@@ -88,6 +102,7 @@
                             data-team="guest"
                             data-points="3"
                             disabled
+                            aria-label="Add 3 points to Guest"
                         >
                             +3
                         </button>
@@ -101,17 +116,37 @@
                         60
                     </p>
                     <div class="clock-controls">
-                        <button id="start-new-game" class="clock-btn">
+                        <button
+                            id="start-new-game"
+                            class="clock-btn"
+                            aria-label="Start or pause game"
+                        >
                             Start
                         </button>
-                        <button id="reset-game" class="clock-btn">Reset</button>
+                        <button
+                            id="reset-game"
+                            class="clock-btn"
+                            aria-label="Reset game"
+                        >
+                            Reset
+                        </button>
                     </div>
                 </div>
             </section>
-            <div id="win-message" class="win-message hidden">
-                <p id="win-text" class="win-text"></p>
-            </div>
         </main>
+        <div
+            id="win-message"
+            class="win-message hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="win-text"
+            tabindex="-1"
+        >
+            <p id="win-text" class="win-text"></p>
+            <p class="sr-only">
+                Press any key to dismiss this message and start a new game.
+            </p>
+        </div>
         <footer>
             <p>Developed by TK - Slam dunking bugs since 2022...😅</p>
         </footer>

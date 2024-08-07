@@ -114,6 +114,66 @@ h3 {
     font-size: var(--font-size-lg);
 }
 
+/* ----- BUTTONS ----- */
+
+/* Common button styles */
+.points-btn,
+.clock-btn {
+    cursor: pointer;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--color-dark-blue);
+    border: 2px solid var(--color-light-blue);
+    border-radius: 5px;
+}
+
+/* Specific styles for points-btn */
+.points-btn {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+/* Specific styles for clock-btn */
+.clock-btn {
+    padding: 0.25em 0.5em;
+}
+
+/* Hover and Active States */
+.points-btn:hover,
+.clock-btn:hover {
+    background-color: var(--color-light-blue);
+    color: var(--color-dark-blue);
+}
+
+.points-btn:active,
+.clock-btn:active {
+    background-color: var(--color-pink);
+    color: var(--color-dark-blue);
+    transform: scale(0.95);
+}
+
+/* Disabled State */
+.points-btn:disabled,
+.clock-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #888;
+    box-shadow: none;
+}
+
+.points-btn:disabled:hover,
+.clock-btn:disabled:hover,
+.points-btn:disabled:active,
+.clock-btn:disabled:active {
+    background-color: #888;
+    color: var(--color-light-blue);
+    transform: none;
+}
+
 /* ----- HEADER ----- */
 
 header {
@@ -122,7 +182,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ----- MAIN ----- */
+/* ----- SCOREBOARD ----- */
 
 .main-container {
     display: flex;
@@ -164,56 +224,6 @@ header {
     gap: 1em;
 }
 
-.points-btn,
-.clock-btn {
-    cursor: pointer;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(0, 0, 0, 0.1) 100%
-    );
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.points-btn {
-    height: 2.5em;
-    width: 2.5em;
-    background-color: var(--color-dark-blue);
-    border: 2px solid var(--color-light-blue);
-    border-radius: 5px;
-}
-
-/* Hover and Active States */
-.points-btn:hover,
-.clock-btn:hover {
-    background-color: var(--color-light-blue);
-    color: var(--color-dark-blue);
-}
-
-.points-btn:active,
-.clock-btn:active {
-    background-color: var(--color-pink);
-    color: var(--color-dark-blue);
-    transform: scale(0.95);
-}
-
-.points-btn:disabled,
-.clock-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    background-color: #888;
-    box-shadow: none;
-}
-
-.points-btn:disabled:hover,
-.clock-btn:disabled:hover,
-.points-btn:disabled:active,
-.clock-btn:disabled:active {
-    background-color: #888;
-    color: var(--color-light-blue);
-    transform: none;
-}
-
 /* ----- CLOCK SECTION ----- */
 
 .clock-section {
@@ -230,13 +240,6 @@ header {
 .clock-controls {
     display: flex;
     gap: 1.5em;
-}
-
-.clock-btn {
-    padding: 0.25em 0.5em;
-    background-color: var(--color-dark-blue);
-    border: 2px solid var(--color-light-blue);
-    border-radius: 5px;
 }
 
 /* ----- FOOTER ----- */
@@ -267,4 +270,33 @@ footer {
 
 .hidden {
     display: none;
+}
+
+/* ----- ACCESSIBILITY ----- */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ----- ANIMATIONS ----- */
+.winning-glow {
+    box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.7);
+    animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(255, 215, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.9);
+    }
 }

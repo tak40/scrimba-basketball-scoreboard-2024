@@ -9,12 +9,14 @@ const winMessage = document.getElementById("win-message")
 const winText = document.getElementById("win-text")
 
 // State Variables
-let homeScore = 0
-let guestScore = 0
-let timeLeft = 2
-let intervalID
-let isStarted = false
-let isRunning = false
+let gameState = {
+    homeScore: 0,
+    guestScore: 0,
+    timeLeft: 60,
+    intervalID: null,
+    isStarted: false,
+    isRunning: false,
+}
 
 // Initial Button State
 disableBtn()
@@ -31,12 +33,12 @@ winMessage.addEventListener("click", handleWinMessageClick)
 
 // Start the game timer
 function startTimer() {
-    intervalID = setInterval(function () {
-        if (timeLeft > 0) {
-            timeLeft--
-            gameClockDisplay.textContent = timeLeft
+    gameState.intervalID = setInterval(function () {
+        if (gameState.timeLeft > 0) {
+            gameState.timeLeft--
+            gameClockDisplay.textContent = gameState.timeLeft
         } else {
-            clearInterval(intervalID)
+            clearInterval(gameState.intervalID)
             declareWinner()
         }
     }, 1000)
@@ -44,13 +46,10 @@ function startTimer() {
 
 // Handle starting or pausing the game
 function handleStartPause() {
-    if (!isStarted) {
+    if (!gameState.isStarted || !gameState.isRunning) {
         startGame()
-    }
-    if (isRunning) {
-        pauseGame()
     } else {
-        restartGame()
+        pauseGame()
     }
 }
 
@@ -58,8 +57,8 @@ function handleStartPause() {
 function startGame() {
     startTimer()
     enableBtn()
-    isStarted = true
-    isRunning = true
+    gameState.isStarted = true
+    gameState.isRunning = true
     startNewGameBtn.textContent = "Pause"
 }
 
@@ -78,35 +77,44 @@ function handleScoreButtonClick(event) {
 
 // Pause the game
 function pauseGame() {
-    clearInterval(intervalID)
+    clearInterval(gameState.intervalID)
     disableBtn()
-    isRunning = false
+    gameState.isRunning = false
     startNewGameBtn.textContent = "Start"
 }
 
-// Restart the game
-function restartGame() {
-    startTimer()
-    enableBtn()
-    isRunning = true
-    startNewGameBtn.textContent = "Pause"
+// Update the winning team with a glow effect
+function updateWinningTeam() {
+    const homeScore = gameState.homeScore
+    const guestScore = gameState.guestScore
+
+    homeScoreDisplay.classList.toggle("winning-glow", homeScore > guestScore)
+    guestScoreDisplay.classList.toggle("winning-glow", guestScore > homeScore)
+
+    // Remove glow if scores are tied
+    if (homeScore === guestScore) {
+        homeScoreDisplay.classList.remove("winning-glow")
+        guestScoreDisplay.classList.remove("winning-glow")
+    }
 }
 
 // Update the home team's score
 function updateHomeScore(points) {
-    homeScore += points
-    homeScoreDisplay.textContent = homeScore
+    gameState.homeScore += points
+    homeScoreDisplay.textContent = gameState.homeScore
+    updateWinningTeam()
 }
 
 // Update the guest team's score
 function updateGuestScore(points) {
-    guestScore += points
-    guestScoreDisplay.textContent = guestScore
+    gameState.guestScore += points
+    guestScoreDisplay.textContent = gameState.guestScore
+    updateWinningTeam()
 }
 
 // Reset the game
 function resetGame() {
-    clearInterval(intervalID)
+    clearInterval(gameState.intervalID)
     resetScores()
     resetClock()
     disableBtn()
@@ -116,57 +124,69 @@ function resetGame() {
 
 // Reset the game state
 function resetScores() {
-    homeScore = 0
-    guestScore = 0
+    gameState.homeScore = 0
+    gameState.guestScore = 0
     homeScoreDisplay.textContent = 0
     guestScoreDisplay.textContent = 0
+    updateWinningTeam()
 }
 
 // Reset the game clock
 function resetClock() {
     gameClockDisplay.textContent = 60
-    timeLeft = 60
+    gameState.timeLeft = 60
 }
 
 // Reset the game state
 function resetGameState() {
     startNewGameBtn.textContent = "Start"
-    isStarted = false
-    isRunning = false
+    gameState.isStarted = false
+    gameState.isRunning = false
 }
 
 // End the game and determine the winner
 function declareWinner() {
-    let result
-    if (homeScore > guestScore) {
-        result = "Home Wins"
-    } else if (guestScore > homeScore) {
-        result = "Guest Wins"
-    } else {
-        result = "It's a Draw"
-    }
+    let result =
+        gameState.homeScore > gameState.guestScore
+            ? "Home"
+            : gameState.guestScore > gameState.homeScore
+            ? "Guest"
+            : "It's a Draw"
     showWinMessage(result)
 }
 
 // Show the win message
 function showWinMessage(result) {
-    winText.textContent = result
-    winMessage.classList.remove("hidden")
-    disableBtn()
-    if (result !== "It's a Draw") {
+    if (result === "Home" || result === "Guest") {
+        winText.textContent = `${result} Wins!`
         showConfetti()
+    } else {
+        winText.textContent = `${result}`
     }
+    winMessage.classList.remove("hidden")
+    winMessage.focus() // Set focus to the dialog
+    disableBtn()
+
+    winMessage.addEventListener("keydown", handleWinMessageKeydown)
 }
 
-// Handle win message click
+function handleWinMessageKeydown(event) {
+    // Dismiss the win message when any key is pressed
+    handleWinMessageClick()
+}
+
+// Handle dismissing the win message (works for both click and keypress)
 function handleWinMessageClick() {
     resetGame()
+    winMessage.removeEventListener("keydown", handleWinMessageKeydown)
+    startNewGameBtn.focus()
 }
 
 // Enable the buttons
 function enableBtn() {
     addPointsBtn.forEach(function (button) {
         button.disabled = false
+        button.tabIndex = 0
     })
 }
 
