@@ -1,4 +1,16 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Variables */
 :root {
+    /* Colors */
     --color-primary-bg: #efefef;
     --color-secondary-bg: #d1d1d1;
     --color-light-blue: #9aabd8;
@@ -6,94 +18,99 @@
     --color-light-gray: #eeeeee;
     --color-pink: #f94f6d;
     --color-dark-blue: #1b244a;
+
+    /* Fonts */
     --font-primary: "Verdana", sans-serif;
     --font-timer: "Cursed Timer ULiL", sans-serif;
+
+    /* Sizes */
+    --font-size-xl: 6rem;
+    --font-size-lg: 5rem;
+    --font-size-md: 4rem;
+    --font-size-base: 3rem;
+    --font-size-sm: 2rem;
+    --font-size-xs: 1.5rem;
+
+    /* Shadows */
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08),
+        0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* ----- GLOBAL STYLES ----- */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-}
-
-* {
-    margin: 0;
-    font: inherit;
-}
-
+/* Global Styles */
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
     min-height: 100vh;
     font-family: var(--font-primary);
     line-height: 1.5;
     background-color: var(--color-primary-bg);
+    text-align: center;
     -webkit-font-smoothing: antialiased;
 }
 
-/* ----- TYPOGRAPHY ----- */
+/* Typography */
 
 h1,
 .score,
 .points-controls,
 .game-clock,
-.clock-btn {
+.clock-controls,
+.win-message {
     font-family: var(--font-timer);
 }
 
 h1,
 h2,
 h3 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: var(--text-shadow);
 }
 
-h1 {
-    font-size: 3rem;
+h1,
+h3 {
+    font-size: var(--font-size-base);
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: var(--font-size-sm);
 }
 
 h3 {
-    color: var(--color-light-gray);
-    font-size: 3rem;
     font-weight: bold;
+    color: var(--color-light-gray);
 }
 
 .clock-section h3 {
-    font-size: 2em;
+    font-size: var(--font-size-sm);
 }
 
-.score {
+.score,
+.game-clock,
+.win-message {
     color: var(--color-pink);
-    font-size: 6rem;
 }
 
-.points-btn {
-    color: var(--color-light-blue);
-    font-size: 1.5rem;
-}
-
-.game-clock {
-    color: var(--color-pink);
-    font-size: 4rem;
-}
-
+.points-btn,
 .clock-btn {
     color: var(--color-light-blue);
-    font-size: 2rem;
 }
 
+/* Individual font sizes */
+.score {
+    font-size: var(--font-size-xl);
+}
+.points-btn {
+    font-size: var(--font-size-xs);
+}
+.game-clock {
+    font-size: var(--font-size-md);
+}
+.clock-btn {
+    font-size: var(--font-size-sm);
+}
 .win-message {
-    font-family: var(--font-timer);
-    color: var(--color-pink);
-    font-size: 5rem;
+    font-size: var(--font-size-lg);
 }
 
 /* ----- HEADER ----- */

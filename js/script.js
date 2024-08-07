@@ -25,6 +25,7 @@ document
     .addEventListener("click", handleScoreButtonClick)
 resetGameBtn.addEventListener("click", resetGame)
 startNewGameBtn.addEventListener("click", handleStartPause)
+winMessage.addEventListener("click", handleWinMessageClick)
 
 // Functions
 
@@ -110,6 +111,7 @@ function resetGame() {
     resetClock()
     disableBtn()
     resetGameState()
+    winMessage.classList.add("hidden")
 }
 
 // Reset the game state
@@ -150,8 +152,15 @@ function declareWinner() {
 function showWinMessage(result) {
     winText.textContent = result
     winMessage.classList.remove("hidden")
-    showConfetti()
     disableBtn()
+    if (result !== "It's a Draw") {
+        showConfetti()
+    }
+}
+
+// Handle win message click
+function handleWinMessageClick() {
+    resetGame()
 }
 
 // Enable the buttons
