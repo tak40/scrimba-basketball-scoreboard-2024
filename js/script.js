@@ -166,14 +166,14 @@ function handleWinMessageClick() {
 // Enable the buttons
 function enableBtn() {
     addPointsBtn.forEach(function (button) {
-        button.removeAttribute("disabled")
+        button.disabled = false
     })
 }
 
 // Disable the buttons
 function disableBtn() {
     addPointsBtn.forEach(function (button) {
-        button.setAttribute("disabled", true)
+        button.disabled = true
     })
 }
 

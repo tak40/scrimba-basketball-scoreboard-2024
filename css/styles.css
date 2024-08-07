@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* CSS RESET */
 *,
 *::before,
 *::after {
@@ -8,7 +8,7 @@
     font: inherit;
 }
 
-/* Variables */
+/* VARIABLES */
 :root {
     /* Colors */
     --color-primary-bg: #efefef;
@@ -37,7 +37,7 @@
         0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Global Styles */
+/* GLOBAL STYLES */
 body {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Typography */
+/* ----- TYPOGRAPHY ----- */
 
 h1,
 .score,
@@ -73,7 +73,8 @@ h3 {
 }
 
 h2 {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
 }
 
 h3 {
@@ -116,7 +117,7 @@ h3 {
 /* ----- HEADER ----- */
 
 header {
-    padding: 1.5rem 0;
+    padding: 1.75em 0;
     background-color: var(--color-secondary-bg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -193,6 +194,24 @@ header {
 .clock-btn:active {
     background-color: var(--color-pink);
     color: var(--color-dark-blue);
+    transform: scale(0.95);
+}
+
+.points-btn:disabled,
+.clock-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #888;
+    box-shadow: none;
+}
+
+.points-btn:disabled:hover,
+.clock-btn:disabled:hover,
+.points-btn:disabled:active,
+.clock-btn:disabled:active {
+    background-color: #888;
+    color: var(--color-light-blue);
+    transform: none;
 }
 
 /* ----- CLOCK SECTION ----- */
