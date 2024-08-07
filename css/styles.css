@@ -190,7 +190,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 3em;
-    margin: 0 auto;
+    margin: 5em auto;
     padding: 4em 8em;
     background-color: var(--color-dark-blue);
     border-radius: 10px;
