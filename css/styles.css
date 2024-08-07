@@ -90,6 +90,12 @@ h3 {
     font-size: 2rem;
 }
 
+.win-message {
+    font-family: var(--font-timer);
+    color: var(--color-pink);
+    font-size: 5rem;
+}
+
 /* ----- HEADER ----- */
 
 header {
@@ -201,4 +207,28 @@ header {
 footer {
     padding: 2em 0;
     background-color: var(--color-secondary-bg);
+}
+
+/* ----- WIN MESSAGE ----- */
+
+.win-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.win-message p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.25em 0.5em;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
 }

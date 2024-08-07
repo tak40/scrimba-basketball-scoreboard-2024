@@ -5,11 +5,13 @@ const gameClockDisplay = document.getElementById("game-clock")
 const startNewGameBtn = document.getElementById("start-new-game")
 const resetGameBtn = document.getElementById("reset-game")
 const addPointsBtn = document.querySelectorAll(".points-btn")
+const winMessage = document.getElementById("win-message")
+const winText = document.getElementById("win-text")
 
 // State Variables
 let homeScore = 0
 let guestScore = 0
-let timeLeft = 60
+let timeLeft = 2
 let intervalID
 let isStarted = false
 let isRunning = false
@@ -34,7 +36,7 @@ function startTimer() {
             gameClockDisplay.textContent = timeLeft
         } else {
             clearInterval(intervalID)
-            endGame()
+            declareWinner()
         }
     }, 1000)
 }
@@ -141,7 +143,15 @@ function declareWinner() {
     } else {
         result = "It's a Draw"
     }
-    console.log(result) // For now, just log the result
+    showWinMessage(result)
+}
+
+// Show the win message
+function showWinMessage(result) {
+    winText.textContent = result
+    winMessage.classList.remove("hidden")
+    showConfetti()
+    disableBtn()
 }
 
 // Enable the buttons
@@ -155,5 +165,14 @@ function enableBtn() {
 function disableBtn() {
     addPointsBtn.forEach(function (button) {
         button.setAttribute("disabled", true)
+    })
+}
+
+// Show confetti animation
+function showConfetti() {
+    confetti({
+        particleCount: 100,
+        spread: 40,
+        origin: { y: 0.7 },
     })
 }
