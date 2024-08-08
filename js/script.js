@@ -8,11 +8,15 @@ const addPointsBtn = document.querySelectorAll(".points-btn")
 const winMessage = document.getElementById("win-message")
 const winText = document.getElementById("win-text")
 
+const INITIAL_GAME_TIME = 720 // 12 minutes
+
 // State Variables
 let gameState = {
     homeScore: 0,
     guestScore: 0,
-    timeLeft: 60,
+    timeLeft: INITIAL_GAME_TIME,
+    pausedTimeLeft: INITIAL_GAME_TIME,
+    startTime: null,
     intervalID: null,
     isStarted: false,
     isRunning: false,
@@ -20,6 +24,9 @@ let gameState = {
 
 // Initial Button State
 disableBtn()
+
+// Initial Game State
+resetClock()
 
 // Event Listeners
 document
@@ -33,15 +40,36 @@ winMessage.addEventListener("click", handleWinMessageClick)
 
 // Start the game timer
 function startTimer() {
-    gameState.intervalID = setInterval(function () {
-        if (gameState.timeLeft > 0) {
-            gameState.timeLeft--
-            gameClockDisplay.textContent = gameState.timeLeft
-        } else {
-            clearInterval(gameState.intervalID)
-            declareWinner()
-        }
-    }, 1000)
+    const startTime =
+        performance.now() - (INITIAL_GAME_TIME - gameState.timeLeft) * 1000
+    gameState.startTime = startTime
+
+    updateTimer()
+}
+
+// Update the game timer
+function updateTimer() {
+    const currentTime = performance.now()
+    const elapsedTime = (currentTime - gameState.startTime) / 1000
+    gameState.timeLeft = Math.max(0, INITIAL_GAME_TIME - elapsedTime) // Prevent negative time
+
+    const minutes = Math.floor(gameState.timeLeft / 60)
+    const seconds = Math.floor(gameState.timeLeft % 60)
+    const milliseconds = Math.floor((gameState.timeLeft % 1) * 100)
+
+    gameClockDisplay.textContent = `${minutes
+        .toString()
+        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${milliseconds
+        .toString()
+        .padStart(2, "0")}`
+
+    if (gameState.timeLeft > 0) {
+        gameState.animationFrameID = requestAnimationFrame(updateTimer)
+    } else {
+        cancelAnimationFrame(gameState.animationFrameID)
+        declareWinner()
+    }
+    gameState.animationFrameID = requestAnimationFrame(updateTimer)
 }
 
 // Handle starting or pausing the game
@@ -77,10 +105,11 @@ function handleScoreButtonClick(event) {
 
 // Pause the game
 function pauseGame() {
-    clearInterval(gameState.intervalID)
+    cancelAnimationFrame(gameState.animationFrameID)
+    gameState.pausedTimeLeft = gameState.timeLeft
     disableBtn()
     gameState.isRunning = false
-    startNewGameBtn.textContent = "Start"
+    startNewGameBtn.textContent = "Resume"
 }
 
 // Update the winning team with a glow effect
@@ -133,8 +162,13 @@ function resetScores() {
 
 // Reset the game clock
 function resetClock() {
-    gameClockDisplay.textContent = 60
-    gameState.timeLeft = 60
+    gameState.pausedTimeLeft = INITIAL_GAME_TIME
+    gameState.timeLeft = INITIAL_GAME_TIME
+    const minutes = Math.floor(INITIAL_GAME_TIME / 60)
+    const seconds = Math.floor(INITIAL_GAME_TIME % 60)
+    gameClockDisplay.textContent = `${minutes
+        .toString()
+        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.00`
 }
 
 // Reset the game state
