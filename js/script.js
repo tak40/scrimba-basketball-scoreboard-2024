@@ -29,9 +29,7 @@ disableBtn()
 resetClock()
 
 // Event Listeners
-document
-    .querySelector(".scoreboard-wrapper")
-    .addEventListener("click", handleScoreButtonClick)
+document.querySelector(".scoreboard-wrapper").addEventListener("click", handleScoreButtonClick)
 resetGameBtn.addEventListener("click", resetGame)
 startNewGameBtn.addEventListener("click", handleStartPause)
 winMessage.addEventListener("click", handleWinMessageClick)
@@ -40,8 +38,7 @@ winMessage.addEventListener("click", handleWinMessageClick)
 
 // Start the game timer
 function startTimer() {
-    const startTime =
-        performance.now() - (INITIAL_GAME_TIME - gameState.timeLeft) * 1000
+    const startTime = performance.now() - (INITIAL_GAME_TIME - gameState.timeLeft) * 1000
     gameState.startTime = startTime
 
     updateTimer()
@@ -57,11 +54,9 @@ function updateTimer() {
     const seconds = Math.floor(gameState.timeLeft % 60)
     const milliseconds = Math.floor((gameState.timeLeft % 1) * 100)
 
-    gameClockDisplay.textContent = `${minutes
+    gameClockDisplay.textContent = `${minutes.toString().padStart(2, "0")}:${seconds
         .toString()
-        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${milliseconds
-        .toString()
-        .padStart(2, "0")}`
+        .padStart(2, "0")}.${milliseconds.toString().padStart(2, "0")}`
 
     if (gameState.timeLeft > 0) {
         gameState.animationFrameID = requestAnimationFrame(updateTimer)
@@ -69,7 +64,7 @@ function updateTimer() {
         cancelAnimationFrame(gameState.animationFrameID)
         declareWinner()
     }
-    gameState.animationFrameID = requestAnimationFrame(updateTimer)
+    // gameState.animationFrameID = requestAnimationFrame(updateTimer)
 }
 
 // Handle starting or pausing the game
@@ -166,9 +161,7 @@ function resetClock() {
     gameState.timeLeft = INITIAL_GAME_TIME
     const minutes = Math.floor(INITIAL_GAME_TIME / 60)
     const seconds = Math.floor(INITIAL_GAME_TIME % 60)
-    gameClockDisplay.textContent = `${minutes
-        .toString()
-        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.00`
+    gameClockDisplay.textContent = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.00`
 }
 
 // Reset the game state
