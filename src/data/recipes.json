@@ -1,0 +1,132 @@
+{
+  "recipes": [
+    {
+      "id": "ama-toza",
+      "name": "Ama Toza (Sweet Vinegar Base)",
+      "category": "Base Sauce",
+      "description": "Sweet vinegar base used in many cold dishes and salsas. Foundation for yuzu cucumber salsa and other preparations.",
+      "ingredients": [
+        "Rice vinegar",
+        "Sugar",
+        "Salt",
+        "Soy sauce",
+        "Bonito",
+        "Cayenne"
+      ],
+      "usedIn": ["fluke-yuzu-salsa", "tai-relish"]
+    },
+    {
+      "id": "yuzu-kosho-dressing",
+      "name": "Yuzu Kosho Dressing",
+      "category": "Dressing",
+      "description": "Citrus-forward, spicy dressing made with yuzu kosho paste. Quite salty, balanced with amazu-tosazu drizzle.",
+      "ingredients": [
+        "Grapeseed oil",
+        "Green chili",
+        "Yuzu juice",
+        "Yuzu kosho paste (yuzu, salt, green chili)",
+        "Honey"
+      ],
+      "usedIn": ["sawara-yuzu-kosho", "wagyu-yuzu-kosho"]
+    },
+    {
+      "id": "red-anticucho-sauce",
+      "name": "Red Anticucho Sauce",
+      "category": "Sauce",
+      "description": "Peruvian-style spicy red sauce with aji panka. One of four components in Kampachi Aji Panka sauce.",
+      "ingredients": [
+        "Grapeseed oil",
+        "Rice vinegar",
+        "Sake",
+        "Aji panka",
+        "Garlic",
+        "Cumin",
+        "Oregano",
+        "Paprika",
+        "Salt",
+        "Black pepper"
+      ],
+      "usedIn": ["kampachi-aji-panka"]
+    },
+    {
+      "id": "yuzu-miso-sauce",
+      "name": "Yuzu Miso Sauce",
+      "category": "Sauce",
+      "description": "Sweet citrus miso sauce. Part of the four-component sauce for Kampachi Aji Panka.",
+      "ingredients": [
+        "Den miso",
+        "Yuzu",
+        "Lemon",
+        "Lime",
+        "Lemon zest"
+      ],
+      "usedIn": ["kampachi-aji-panka"]
+    },
+    {
+      "id": "aji-amarillo-aioli",
+      "name": "Aji Amarillo Aioli",
+      "category": "Aioli",
+      "description": "Creamy aioli with Peruvian yellow pepper. Used as accent dots on sashimi dishes.",
+      "ingredients": [
+        "Mayo",
+        "Lemon juice",
+        "Lime juice",
+        "Yuzu",
+        "Aji amarillo",
+        "Salt",
+        "Cilantro"
+      ],
+      "usedIn": ["sawara-yuzu-kosho", "wagyu-yuzu-kosho"]
+    },
+    {
+      "id": "carrot-ginger-dressing",
+      "name": "Carrot Ginger Dressing",
+      "category": "Dressing",
+      "description": "Fresh, vibrant dressing for salads. Used on Blue Prawn Salad with peppery greens.",
+      "ingredients": [
+        "Extra virgin olive oil",
+        "Rice vinegar",
+        "Amatoza",
+        "Ginger juice",
+        "Sriracha",
+        "Shallots",
+        "Ginger oroshi",
+        "Garlic",
+        "Carrot pulp",
+        "Carrot juice",
+        "Maldon salt",
+        "Shiso leaves",
+        "White pepper"
+      ],
+      "usedIn": ["blue-prawn-salad"]
+    },
+    {
+      "id": "salmon-sweet-onion-salsa",
+      "name": "Salmon Sweet Onion Salsa",
+      "category": "Salsa",
+      "description": "Sweet onion-based salsa specifically made for King Salmon preparations.",
+      "ingredients": [
+        "Sweet onion (diced)",
+        "Rice vinegar",
+        "Soy sauce",
+        "Sesame oil",
+        "Green onion",
+        "Ginger"
+      ],
+      "usedIn": ["king-salmon-sweet-onion"]
+    },
+    {
+      "id": "aki-ameli-aioli",
+      "name": "Aki Ameli Aioli",
+      "category": "Aioli",
+      "description": "Signature Nobu aioli used as finishing sauce on various preparations.",
+      "ingredients": [
+        "Japanese mayo",
+        "Aki miso",
+        "Lemon juice",
+        "Rice vinegar"
+      ],
+      "usedIn": ["king-salmon-sweet-onion"]
+    }
+  ]
+}

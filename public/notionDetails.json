@@ -1,0 +1,1145 @@
+{
+  "_metadata": {
+    "description": "Nobu Malibu dish details from Notion, organized by category and menu status",
+    "categories": ["COLD", "HOT", "DESSERTS", "BAR", "ARCHIVED"],
+    "menuStatuses": {
+      "on_menu": "Currently on the regular menu",
+      "special": "Off-menu special (available upon request)",
+      "weekend": "Weekend only special",
+      "seasonal": "Seasonal limited availability",
+      "archived": "No longer available"
+    },
+    "lastUpdated": "2026-01-13"
+  },
+
+  "dishes": [
+    {
+      "id": "blue_prawn_salad",
+      "name": "Blue Prawn Salad",
+      "category": "COLD",
+      "menuStatus": "on_menu",
+      "station": "Salad",
+      "spielFull": "Blue prawn salad with Caledonian blue prawns rubbed in a Szechuan-coriander blend and grilled, served over peppery greens with Japanese mizuna, tossed in our carrot ginger dressing. We finish it with crispy gobo chips, which are burdock root, and pickled tri-color cauliflower for crunch and a little tang. Light, refreshing salad with a bit of spice and texture.",
+      "spielShort": "Grilled Caledonian blue prawns over peppery greens in carrot ginger dressing, finished with crispy gobo chips and pickled cauliflower. Light, refreshing, with a little spice and crunch.",
+      "cookingMethod": [
+        "Season: Rub prawns with Szechuan-coriander blend",
+        "Grill: Grill prawns until just cooked",
+        "Dress greens: Toss peppery greens with carrot ginger dressing",
+        "Plate: Arrange greens, top with grilled blue prawns",
+        "Finish: Top with crispy gobo chips and pickled tri-color cauliflower"
+      ],
+      "buildPlating": [
+        "Base: Peppery greens (arugula, frisée, mizuna, watercress, butter lettuce) tossed in carrot ginger dressing",
+        "Protein: Grilled Caledonian blue prawns on top",
+        "Garnish: Crispy gobo chips (burdock root), pickled tri-color cauliflower"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Caledonian blue prawn"]},
+        {"label": "Peppery Greens", "items": ["Arugula", "Frisée", "Mizuna", "Watercress", "Butter lettuce"]},
+        {"label": "Blue Prawn Spice Rub", "items": ["Green pepper", "White pepper", "Mustard seed", "Coriander seed", "Szechuan pepper", "Dry miso", "Green togarashi"]},
+        {"label": "Carrot Ginger Dressing", "items": ["EVOO", "Rice vinegar", "Amatoza", "Ginger juice", "Sriracha", "Shallots", "Ginger oroshi", "Garlic", "Carrot pulp", "Carrot juice", "Maldon salt", "Shiso leaves", "White pepper"]},
+        {"label": "Garnish", "items": ["Crispy gobo chips (burdock root)", "Pickled tri-color cauliflower"]}
+      ],
+      "allergenNotes": ["Shellfish (Caledonian blue prawn)", "Soy (dry miso in rub)", "Nightshade (sriracha, green togarashi)", "Alliums (shallots, garlic)", "Mustard (mustard seed in rub)"],
+      "flavorNotes": "Caledonian blue prawn: naturally blue shell, slightly sweet with clean ocean note, firm and juicy texture. Carrot ginger dressing: ginger-forward with a light spice and shiso accent. Light, refreshing salad with a bit of spice and texture.",
+      "notes": "Greens differentiation: This uses the 'peppery greens blend' (arugula, frisée, mizuna, watercress, butter lettuce). This is different from the 'spring mix style base' used for Field Greens, Sashimi Salad, Grilled Shiitake Salad, Lobster Salad."
+    },
+
+    {
+      "id": "fluke_yuzu_salsa",
+      "name": "Fluke Yuzu Salsa",
+      "category": "COLD",
+      "menuStatus": "on_menu",
+      "station": "Sushi",
+      "spielFull": "Fluke sashimi, nine thin slices, dressed in a spiced citrus cucumber salsa with yuzu, lime, Meyer lemon, and a touch of serrano, finished with a light drizzle of olive oil and topped with micro cilantro. It is a very clean, refreshing sashimi plate with just a gentle hint of heat that sits beautifully between courses.",
+      "spielShort": "Nine slices of fluke sashimi dressed in a yuzu cucumber serrano salsa, finished with olive oil and micro cilantro. Clean and refreshing with just a gentle hint of heat.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Base: Fluke sashimi (nine thin slices)",
+        "Dress: Yuzu cucumber serrano salsa",
+        "Finish: Drizzle of olive oil",
+        "Garnish: Micro cilantro"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Fluke sashimi (nine thin slices)"]},
+        {"label": "Yuzu Cucumber Serrano Salsa", "items": ["Ama Toza base (rice vinegar, sugar, salt, soy sauce, bonito, cayenne)", "Cucumber (diced)", "Lime juice", "Meyer lemon juice", "Yuzu juice", "Garlic (minced)", "Ginger (minced)", "Serrano (thin sliced)", "Olive oil"]},
+        {"label": "Garnish", "items": ["Micro cilantro", "Olive oil drizzle"]}
+      ],
+      "allergenNotes": ["Fish (fluke, bonito in ama toza)", "Soy (soy sauce in ama toza)", "Nightshade (serrano, cayenne)"],
+      "flavorNotes": "Spiced citrus profile that is bright and clean. Fresh cilantro and ginger lift. Gentle heat from serrano (accent, not primary). Cucumber provides refreshing texture. Sweet-savory foundation from ama toza. Silky olive oil finish. No onion in this salsa.",
+      "notes": "Preparation timing: Add olive oil drizzle just before sending to keep the plate glossy and aromatic. Serrano role: Used as an accent, not a dominant heat element. Onion-free: This salsa intentionally contains no onion."
+    },
+
+    {
+      "id": "kampachi_aji_panka",
+      "name": "Kampachi Aji Panka",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Kampachi amberjack sashimi, six pieces. The sauce is a blend of Peruvian spicy red anticucho, sweet citrus miso, fresh aji amarillo pepper, and a house vinegar blend. We heat the vinegar blend just enough to draw out the vegetable flavors quickly, then mix all four components together. Sweet and savory with a little spice and a Japanese citrus note. Finished with crispy tofu skin, pickled sushi ginger, kaiware sprouts, diced red onion, and a sprinkle of soy salt.",
+      "spielShort": "Kampachi sashimi with red anticucho, yuzu miso, fresh aji amarillo, and house vinegar blend, all mixed together. Finished with crispy yuba, pickled ginger, kaiware, and soy salt. Sweet, savory, a little spice.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Sashimi: Six pieces of kampachi amberjack",
+        "Sauce: Red anticucho, yuzu miso, fresh aji amarillo pepper, and house vinegar blend, all mixed together",
+        "Garnish: Crispy yuba (tofu skin), pickled sushi ginger, kaiware sprouts, diced red onion, soy salt sprinkle"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Kampachi (amberjack) sashimi, 6 pieces"]},
+        {"label": "Red Anticucho Sauce", "items": ["Grapeseed oil", "Rice vinegar", "Sake", "Aji panka", "Garlic", "Cumin", "Oregano", "Paprika", "Salt", "Black pepper"]},
+        {"label": "Yuzu Miso Sauce", "items": ["Den miso", "Yuzu", "Lemon", "Lime", "Lemon zest"]},
+        {"label": "Fresh Aji Amarillo Pepper", "items": []},
+        {"label": "House Vinegar Blend (heated to draw out flavor)", "items": ["Rice wine vinegar", "White onion", "Black pepper", "Ginger", "Red chili flakes", "Garlic"]},
+        {"label": "Garnish", "items": ["Crispy yuba (tofu skin)", "Pickled sushi ginger", "Kaiware sprouts", "Diced red onion", "Soy salt"]}
+      ],
+      "allergenNotes": ["Fish (kampachi)", "Soy (red anticucho, yuzu miso, soy salt)", "Gluten (soy sauce components)", "Nightshade (aji panka, aji amarillo, red chili flakes)"],
+      "flavorNotes": "Sweet and savory red anticucho base with warm spice (cumin, oregano, aji panka). Bright citrus from yuzu miso (yuzu, lemon, lime). Fresh aji amarillo adds complexity and gentle heat. House vinegar blend adds tangy depth with garlic and chili notes. Crispy yuba for textural contrast. Pickled ginger for acid and aromatic brightness.",
+      "notes": "Vinegar Blend Technique: The house vinegar blend is heated (not boiled) before mixing. This draws out the vegetable flavors in minutes rather than letting it sit 3-4 days to develop. All four sauce components are mixed together as a unified sauce."
+    },
+
+    {
+      "id": "sawara_yuzu_kosho",
+      "name": "Sawara Yuzu Kosho",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Six pieces of Spanish mackerel sashimi on fresh arugula, dressed with our house yuzu kosho. It is citrus forward and quite spicy dressing, with a touch of bonito infused sweet vinegar to balance it out. Each piece gets a dot of aji amarillo aioli, a slice of pickled red onion, and we finish with crispy rice cracker pearls to add a light texture. Bright, citrusy, peppery heat from the yuzu kosho with a fresh bite from the arugula. It eats like a light sashimi salad.",
+      "spielShort": "Spanish mackerel on arugula with yuzu kosho dressing, citrus forward and pretty spicy. Finished with aji amarillo aioli, pickled onion, crispy rice cracker pearls. Light, fresh, sashimi salad style.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Base: Fresh arugula bed",
+        "Protein: Six pieces of sawara on top",
+        "Dressing: Yuzu kosho dressing over the arugula and sashimi",
+        "Balance Drizzle: Amazu-tosazu blend drizzled on the side of the plate",
+        "Accents: Dots of aji amarillo aioli on the plate, pickled red onion on each slice, sprinkle of crispy rice cracker pearls"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Sawara (Spanish mackerel) sashimi, 6 pieces"]},
+        {"label": "Base", "items": ["Fresh arugula"]},
+        {"label": "Yuzu Kosho Dressing", "items": ["Grapeseed oil", "Green chili", "Yuzu juice", "Yuzu kosho paste (yuzu, salt, green chili)", "Honey"]},
+        {"label": "Amazu-Tosazu Blend", "items": ["Amazu (rice vinegar, sugar, salt)", "Tosazu (rice vinegar, bonito, soy sauce)"]},
+        {"label": "Pickled Red Onion", "items": ["Pickling liquid is a blend of tosazu and amazu"]},
+        {"label": "Aji Amarillo Aioli", "items": ["Mayo", "Lemon juice", "Lime juice", "Yuzu", "Aji amarillo", "Salt", "Cilantro"]},
+        {"label": "Garnish", "items": ["Crispy rice cracker pearls"]}
+      ],
+      "allergenNotes": ["Fish (sawara, bonito in tosazu)", "Eggs (mayo in aioli)", "Soy (tosazu)", "Gluten (soy sauce in tosazu)", "Citrus (yuzu, lemon, lime)"],
+      "flavorNotes": "Bright citrus from yuzu kosho dressing and yuzu juice. Peppery heat from yuzu kosho paste. Subtle sweetness from honey. Fresh, peppery bite from arugula. Tangy acid from pickled red onion. Creamy, subtle heat from aji amarillo aioli. Crunch from rice cracker pearls. Amazu-tosazu drizzle adds gentle sweetness and acidity to balance the salty yuzu kosho.",
+      "notes": "Wagyu version is identical build, just swap sawara for A5 wagyu. Amazu-Tosazu Drizzle: This is a sushi kitchen blend (different from the kitchen amatoza). It's drizzled on the side of the plate in a small amount because the yuzu kosho dressing is quite salty. The drizzle balances the dish. Eats like a light sashimi salad thanks to the arugula base and balanced dressing."
+    },
+
+    {
+      "id": "wagyu_yuzu_kosho",
+      "name": "Wagyu Yuzu Kosho",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "A5 Wagyu, two ounces minimum, on fresh arugula, dressed with our house yuzu kosho. It is citrus forward and quite spicy dressing, with a touch of bonito infused sweet vinegar to balance it out. Each piece gets a dot of aji amarillo aioli, a slice of pickled red onion, and we finish with crispy rice cracker pearls to add a light texture. Bright, citrusy, peppery heat from the yuzu kosho with a fresh bite from the arugula. It eats like a light sashimi salad.",
+      "spielShort": "A5 Wagyu on arugula with yuzu kosho dressing, citrus forward and pretty spicy. Finished with aji amarillo aioli, pickled onion, crispy rice cracker pearls.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Base: Fresh arugula bed",
+        "Protein: A5 Wagyu, 2 ounces min on top",
+        "Dressing: Yuzu kosho dressing over the arugula and wagyu",
+        "Balance Drizzle: Amazu-tosazu blend drizzled on the side of the plate",
+        "Accents: Dots of aji amarillo aioli on the plate, pickled red onion on each slice, sprinkle of crispy rice cracker pearls"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["A5 Wagyu, 2 ounces min"]},
+        {"label": "Base", "items": ["Fresh arugula"]},
+        {"label": "Yuzu Kosho Dressing", "items": ["Grapeseed oil", "Green chili", "Yuzu juice", "Yuzu kosho paste (yuzu, salt, green chili)", "Honey"]},
+        {"label": "Amazu-Tosazu Blend", "items": ["Amazu (rice vinegar, sugar, salt)", "Tosazu (rice vinegar, bonito, soy sauce)"]},
+        {"label": "Aji Amarillo Aioli", "items": ["Mayo", "Lemon juice", "Lime juice", "Yuzu", "Aji amarillo", "Salt", "Cilantro"]},
+        {"label": "Garnish", "items": ["Crispy rice cracker pearls", "Pickled red onion"]}
+      ],
+      "allergenNotes": ["Fish (bonito in tosazu)", "Eggs (mayo in aioli)", "Soy (tosazu)", "Gluten (soy sauce in tosazu)", "Citrus (yuzu, lemon, lime)"],
+      "flavorNotes": "Bright citrus from yuzu kosho dressing. Peppery heat from yuzu kosho paste. Fresh, peppery bite from arugula. Amazu-tosazu drizzle adds gentle sweetness and acidity to balance the salty yuzu kosho.",
+      "notes": "Same build as Sawara Yuzu Kosho but with A5 wagyu instead of fish."
+    },
+
+    {
+      "id": "tai_relish",
+      "name": "Tai Relish",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Tai snapper sashimi wrapped around a crispy phyllo dough, set in a butter lettuce cup, topped with our house-made sweet Japanese relish of cucumber, zucchini, white onion, and celery, and a thin slice of jalapeño. Finished with a sprinkle of soy salt. Sweet, crisp and a little heat.",
+      "spielShort": "Tai snapper wrapped around crispy phyllo in a butter lettuce cup, topped with house-made sweet Japanese relish and jalapeño, finished with soy salt. Bite-size, two piece minimum.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Base: Butter lettuce cup",
+        "Center: Tai snapper sashimi wrapped around crispy phyllo dough",
+        "Top: House-made sweet Japanese relish",
+        "Garnish: Thin slice of jalapeño",
+        "Finish: Sprinkle of soy salt"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Tai snapper sashimi (wrapped around phyllo)"]},
+        {"label": "Structure", "items": ["Crispy phyllo dough", "Butter lettuce cup"]},
+        {"label": "House-Made Sweet Japanese Relish", "items": ["Zucchini (diced)", "Japanese cucumber (diced)", "White onion (diced)", "Celery (diced)", "Salt"]},
+        {"label": "Relish Sauce (Heated then Chilled)", "items": ["Amazu (sweet rice vinegar)", "Ginger oroshi (grated ginger)", "Mustard seeds", "Lemon slice"]},
+        {"label": "Garnish", "items": ["Jalapeño (thin slice)"]},
+        {"label": "Finish", "items": ["Soy salt"]}
+      ],
+      "allergenNotes": ["Fish (snapper)", "Nightshade (jalapeño)", "Gluten (phyllo dough)", "Soy (in amazu, soy salt)"],
+      "flavorNotes": "Sweet snapper as the protein centerpiece. Crispy phyllo provides textural contrast. House relish is bright and pickled, sweet-tangy from amazu, with mustard seed bite. Ginger oroshi adds warmth and freshness. Jalapeño slice adds a light heat and fresh pop. Soy salt finish brings savory depth. Butter lettuce cup is tender and acts as a holding vessel. Overall: sweet, crisp, and a little heat.",
+      "notes": "Minimum order: Two pieces. Format: Bite-size, served by the piece."
+    },
+
+    {
+      "id": "tai_agave",
+      "name": "Tai Agave",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Six pieces of Japanese snapper sashimi in a sweet and spicy agave aji amarillo sauce with lemon and garlic, finished with fresh aji amarillo pepper to add even more heat, shaved celery hearts for a bit of crunch, and a sprinkle of black salt as a finishing touch. It is clean and bright with real heat and is one of the spiciest sashimi plates we serve, so it can be a bit of a challenge if you are sensitive to spice.",
+      "spielShort": "Tai Agave is six pieces of Japanese snapper sashimi in a sweet and spicy agave aji amarillo sauce with lemon and garlic, finished with fresh aji amarillo pepper for extra heat, shaved celery hearts for crunch, and a sprinkle of black salt as a finishing touch.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Base: Sweet and spicy agave nectar sauce",
+        "Protein: Six pieces of Japanese snapper sashimi",
+        "Garnish: Fresh aji amarillo pepper",
+        "Garnish: Shaved celery hearts",
+        "Finish: Sprinkle of black salt"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Japanese snapper sashimi (six pieces)"]},
+        {"label": "Sweet and Spicy Agave Sauce", "items": ["Aji amarillo paste", "Garlic (minced)", "Lemon juice", "Agave nectar", "Salt"]},
+        {"label": "Garnishes", "items": ["Fresh aji amarillo pepper (diced or thin sliced)", "Celery hearts (shaved)", "Black salt (sprinkle)"]}
+      ],
+      "allergenNotes": ["Fish (snapper)"],
+      "flavorNotes": "Sweet agave nectar provides the foundation. Aji amarillo brings mild heat and fruity pepper notes. Fresh aji amarillo pepper adds visual pop and fresh bite. Shaved celery hearts contribute a light, crisp texture and subtle green vegetable note. Black salt finishes with mineral depth and visual contrast. Overall: sweet and spicy with bright, fresh accents. One of the spiciest sashimi plates we serve.",
+      "notes": "Portion: Six pieces. Dietary advantage: Naturally soy-free and gluten-free."
+    },
+
+    {
+      "id": "toro_yuzu_miso",
+      "name": "Toro Yuzu Miso",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Toro sashimi, six pieces, lightly seared on the outside and sitting in a citrus sweet yuzu miso. The sauce is made with Japanese citrus and our house sweet den miso. On top of each slice there is just a tiny spoon of our house jalapeño salsa made from our signature jalapeño dressing, chopped red onion, and fresh serrano, then finished with caviar. So you get rich, buttery toro, a sweet savory citrus miso, and just a little bite and heat from the salsa and caviar to balance the richness. It is one of the more premium sashimi plates we offer and the yuzu miso has a deeper, richer sweetness compared with regular miso.",
+      "spielShort": "Lightly seared toro sashimi in a citrus sweet yuzu miso, with a touch of house jalapeño salsa and caviar on each slice.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Sauce base: Citrus sweet yuzu miso on plate",
+        "Protein: Six pieces of toro sashimi, lightly seared on the outside",
+        "Topping: Tiny spoon of house jalapeño salsa on each slice",
+        "Finish: Caviar on top of each sashimi"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Toro (fatty tuna), six pieces, lightly seared"]},
+        {"label": "Citrus Sweet Yuzu Miso", "items": ["Den miso (house sweet miso)", "White miso", "Sake", "Mirin", "Sugar", "Yuzu", "Lemon", "Lime", "Lemon zest"]},
+        {"label": "House Jalapeño Salsa (on each slice)", "items": ["Jalapeño dressing (grapeseed oil, rice vinegar, jalapeño, serrano, garlic)", "Chopped red onion", "Fresh serrano"]},
+        {"label": "Finish", "items": ["Caviar"]}
+      ],
+      "allergenNotes": ["Fish (toro)", "Soy (den miso)", "Fish roe (caviar)", "Allium (red onion, garlic)", "Nightshade (jalapeño, serrano)"],
+      "flavorNotes": "Rich, buttery toro with a light sear for warmth and texture. Yuzu miso has a deeper, richer sweetness compared with regular miso. Sweet, savory, and citrus-forward glaze. Jalapeño salsa adds a little bite and heat. Caviar brings brininess to balance the richness. One of the more premium sashimi plates.",
+      "notes": "Portion: Six pieces. Sear: Light sear on the outside, raw center. Salsa placement: Tiny spoon on each slice. Caviar placement: On top of each individual sashimi slice. Position: Premium sashimi offering."
+    },
+
+    {
+      "id": "toro_wasabi_salsa",
+      "name": "Toro Wasabi Salsa",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Toro sashimi, six pieces, lightly seared on the outside and set in a ponzu sauce that we make in house with soy sauce, lemon, and rice vinegar. On top of each slice there is a small amount of wasabi salsa made with kizami wasabi and chopped red onion, then finished with micro cilantro. So you get rich, buttery toro with a light sear for warmth and texture, a bright citrus soy ponzu, clean wasabi heat, and a fresh green finish from the micro cilantro. It is a lighter, more citrus forward toro preparation compared with the yuzu miso version.",
+      "spielShort": "Lightly seared toro sashimi in house made ponzu with a touch of wasabi salsa and micro cilantro on each slice.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Sauce base: House made ponzu sauce on the plate",
+        "Protein: Six pieces of toro sashimi, lightly seared on the outside, raw in the center",
+        "Topping: Wasabi salsa on each slice",
+        "Finish: Micro cilantro on top of the sashimi"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Toro, fatty tuna sashimi, six pieces, lightly seared"]},
+        {"label": "Ponzu Sauce", "items": ["Soy sauce", "Lemon juice", "Rice vinegar"]},
+        {"label": "Wasabi Salsa", "items": ["Kizami wasabi", "Red onion, finely chopped"]},
+        {"label": "Finish", "items": ["Micro cilantro"]}
+      ],
+      "allergenNotes": ["Fish (toro)", "Soy (soy sauce and hydrolyzed vegetable protein in kizami wasabi; soy in ponzu)", "Gluten (wheat in soy sauce)", "Allium (red onion in wasabi salsa)"],
+      "flavorNotes": "Rich, fatty toro with a light sear and raw center. Ponzu keeps the plate light, citrusy, and soy-forward. Kizami wasabi salsa adds clean, punchy wasabi heat plus a little bite from red onion. Micro cilantro lifts everything with a fresh green, herbal note. Overall: light, citrus forward, clean and focused, less rich than the yuzu miso toro.",
+      "notes": "Portion: Six pieces. Sear: Light sear on the outside, raw center. Salsa placement: Small amount on each slice. Kizami wasabi is a prepared chopped wasabi condiment, real wasabi root finely chopped and marinated in soy sauce and seasonings."
+    },
+
+    {
+      "id": "salmon_sweet_onion",
+      "name": "Salmon Sweet Onion",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Six pieces of salmon sashimi topped with our Sweet Onion Salsa, the same bright, savory sweet salsa we use for the taco dishes, then finished with a dot of aji amarillo aioli. Clean sashimi style, but with that taco inspired punch.",
+      "spielShort": "Salmon sashimi topped with Sweet Onion Salsa and aji amarillo aioli. Bright, savory sweet, sashimi plate.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Plate style: Sashimi plate",
+        "Protein: 6 pieces salmon sashimi",
+        "Top: Sweet Onion Salsa spooned over the salmon",
+        "Finish: Dot of aji amarillo aioli on each piece"
+      ],
+      "ingredientGroups": [
+        {"label": "Salmon", "items": ["Salmon sashimi (6 pieces)"]},
+        {"label": "Sweet Onion Salsa", "items": ["Olive oil", "Soy sauce", "Ama toza", "Soy mirin", "Yuzu", "Onion", "Micro cilantro", "Garlic puree", "Chili d'agua"]},
+        {"label": "Aji Amarillo Aioli", "items": ["Mayo", "Lemon juice", "Lime juice", "Yuzu", "Aji amarillo", "Salt", "Cilantro"]}
+      ],
+      "allergenNotes": ["Fish (salmon)", "Soy (soy sauce in Sweet Onion Salsa)", "Gluten (soy sauce contains gluten)", "Eggs (mayo in aji amarillo aioli)", "Citrus (yuzu, lemon, lime)"],
+      "flavorNotes": "Bright, savory sweet salsa with the same flavor profile as the taco dishes, turned into a sashimi plate.",
+      "notes": "This is basically the taco flavor profile turned into a sashimi plate."
+    },
+
+    {
+      "id": "whitefish_arugula",
+      "name": "Whitefish Arugula",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Nine pieces of delicate fluke sashimi set in our signature jalapeño dressing, which is more garlicky and bright than it is spicy, with acidity from rice vinegar. Finished with sliced aged pecorino cheese on each piece and micro arugula for a fresh, peppery bite. It's a really balanced sashimi plate, clean and flavorful.",
+      "spielShort": "Nine pieces of fluke sashimi in jalapeño dressing, topped with sliced aged pecorino cheese and finished with micro arugula. Delicate sashimi plate, garlicky and bright with a mild kick.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Plate style: Sashimi plate",
+        "Protein: Fluke sashimi, 9 slices",
+        "Dressing: Jalapeño dressing",
+        "Finish: Sliced aged pecorino cheese on each piece",
+        "Top: Micro arugula"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Fluke sashimi (9 slices)"]},
+        {"label": "Jalapeño Dressing", "items": ["Grapeseed oil", "Rice vinegar", "Jalapeños", "Serrano", "Garlic"]},
+        {"label": "Finish", "items": ["Aged pecorino cheese (sliced)", "Micro arugula"]}
+      ],
+      "allergenNotes": ["Fish (Fluke)", "Dairy (Pecorino cheese)"],
+      "flavorNotes": "Clean, delicate white fish. Jalapeño dressing is garlicky and bright, with rice vinegar acidity. Mild heat (more flavor-forward than spicy). Nutty, aged cheese note from pecorino. Fresh peppery bite from micro arugula. Overall: balanced, clean, flavorful.",
+      "notes": "Guest-friendly positioning: 'not really spicy, more garlicky and bright.' Optional variation: can be done with salmon sashimi."
+    },
+
+    {
+      "id": "salmon_pastrami_rice_cakes",
+      "name": "Salmon Pastrami Rice Cakes",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Smoked salmon sashimi rubbed with our house-made pastrami seasoning, served on a crispy rice cake, then finished with wasabi shiso aioli, crispy capers, and a touch of red onion and cilantro. You get soft salmon against the crunch of the rice cake, peppery warmth from the pastrami spice, and a clean wasabi herb finish.",
+      "spielShort": "Smoked salmon pastrami on a crispy rice cake, finished with wasabi shiso aioli and crispy capers, with a little red onion and cilantro.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Base: Crispy rice cakes (per piece)",
+        "Protein: Smoked salmon sashimi",
+        "Seasoning: Pastrami rub on the salmon",
+        "Sauce: Wasabi shiso aioli mixed with cilantro and red onion",
+        "Finish: Crispy capers",
+        "Portion: 2 pieces minimum"
+      ],
+      "ingredientGroups": [
+        {"label": "Main", "items": ["Smoked salmon sashimi", "Crispy rice cake", "Crispy capers"]},
+        {"label": "Wasabi Shiso Aioli (with cilantro and red onion)", "items": ["Mayo", "Lemon juice", "Lime juice", "Yuzu juice", "Wasabi", "Shiso", "Chives", "Cilantro", "Red onion"]},
+        {"label": "Pastrami Rub", "items": ["Black peppercorn", "White peppercorn", "Coriander seeds", "Mustard seeds", "Minced garlic", "Brown sugar", "Paprika", "Salt", "Rocoto salt"]}
+      ],
+      "allergenNotes": ["Fish (Salmon)", "Egg (Mayo)", "Mustard (mustard seeds in rub)", "Nightshade (Paprika, rocoto salt)", "Alliums (Garlic, chives, red onion)", "Citrus (lemon, lime, yuzu)"],
+      "flavorNotes": "Soft salmon against the crunch of the rice cake. Peppery warmth from the pastrami spice. Clean wasabi herb finish.",
+      "notes": "Minimum order: 2 pieces."
+    },
+
+    {
+      "id": "tai_truffle_special",
+      "name": "Tai Truffle Special",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Sushi",
+      "spielFull": "Six pieces of Japanese red snapper sashimi set in a bonito-infused, sweet-savory truffle yuzu soy. Topped with thinly sliced eryngii mushrooms and shaved black truffles, then finished with micro celery and a touch of white pepper. Aromatic and elegant, with clean citrus, savory depth, and that earthy truffle finish.",
+      "spielShort": "Six pieces of tai sashimi in a bonito-infused sweet-savory truffle yuzu soy, topped with eryngii mushrooms and shaved black truffles, finished with micro celery and white pepper.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Plate style: Sashimi plate",
+        "Protein: Tai sashimi, 6 pieces",
+        "Sauce: Truffle oil + Ama Toza + Yuzu Soy",
+        "Top: Thinly sliced eryngii mushrooms",
+        "Top: Shaved black truffles",
+        "Finish: Micro celery, white pepper"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Tai sashimi (6 pieces)"]},
+        {"label": "Toppings and Finish", "items": ["Eryngii mushrooms", "Truffles (shaved)", "Micro celery", "White pepper"]},
+        {"label": "Sauce", "items": ["Truffle oil"]},
+        {"label": "Ama Toza", "items": ["Rice vinegar", "Sugar", "Salt", "Soy sauce", "Bonito", "Cayenne"]},
+        {"label": "Yuzu Soy", "items": ["Soy sauce", "Yuzu juice"]}
+      ],
+      "allergenNotes": ["Fish (tai)", "Soy (ama toza, yuzu soy)", "Gluten (ama toza, yuzu soy)", "Mushroom (eryngii, truffle)"],
+      "flavorNotes": "Aromatic and elegant, with clean citrus, savory depth, and that earthy truffle finish.",
+      "notes": "Bonito-infused, sweet-savory truffle yuzu soy sauce."
+    },
+
+    {
+      "id": "tuna_cilantro_salad",
+      "name": "Tuna Cilantro Salad",
+      "category": "COLD",
+      "menuStatus": "special",
+      "station": "Salad",
+      "spielFull": "Bigeye tuna sashimi, seven pieces, dusted with salt and pepper and lightly seared on the outside, set around crisp peppery greens, arugula, mizuna, watercress, frisée, and butter lettuce, tossed with shaved daikon, finely diced ginger, finely diced serrano, and cilantro in a bright sesame tosazu dressing with fresh-squeezed Meyer lemon juice. Finished with black sesame seeds. Bright citrus, peppery greens, and a clean heat from serrano. Cilantro is a supporting note, not overpowering.",
+      "spielShort": "Seven pieces of bigeye tuna, seared and set around peppery greens with daikon, ginger, serrano, and cilantro in sesame tosazu and Meyer lemon, finished with black sesame seeds.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Center: Peppery greens blend (arugula, watercress, frisée, mizuna, butter lettuce) tossed with shaved daikon, finely diced ginger, finely diced serrano, chopped cilantro, sesame tosazu dressing, and Meyer lemon juice",
+        "Around: 7 pieces of bigeye tuna (salt and pepper dusted, lightly seared) set around the greens",
+        "Garnish: Black sesame seeds"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Bigeye tuna sashimi (7 pieces), salt and pepper dusted, lightly seared on outside"]},
+        {"label": "Greens (Peppery Greens Blend)", "items": ["Arugula", "Watercress", "Frisée", "Mizuna", "Butter lettuce"]},
+        {"label": "Add-ins", "items": ["Shaved daikon radish", "Finely diced ginger", "Finely diced serrano", "Chopped cilantro"]},
+        {"label": "Sesame Tosazu Dressing", "items": ["Tosazu (soy sauce, rice vinegar, bonito)", "Ama toza (rice vinegar, sugar, salt, soy sauce, bonito, cayenne)", "Grapeseed oil", "Sesame oil"]},
+        {"label": "In the Bowl", "items": ["Fresh-squeezed Meyer lemon juice"]},
+        {"label": "Garnish", "items": ["Black sesame seeds"]}
+      ],
+      "allergenNotes": ["Fish (bigeye tuna, bonito in tosazu/ama toza)", "Soy (soy sauce in tosazu and ama toza)", "Sesame (sesame oil, sesame seeds)", "Nightshade (serrano)"],
+      "flavorNotes": "Bright citrus and sesame aroma. Clean, gentle heat from serrano. Crisp, peppery greens. Fresh ginger bite. Very refreshing overall. Cilantro is a supporting note, not dominant.",
+      "notes": "Seven pieces of bigeye tuna."
+    },
+
+    {
+      "id": "wild_king_salmon_rocoto",
+      "name": "Wild King Salmon Rocoto",
+      "category": "HOT",
+      "menuStatus": "on_menu",
+      "station": "Sauté",
+      "spielFull": "Wild king salmon, sashimi grade, rubbed with Sichuan coriander and pan-seared in our house-made shiso rocoto butter with a splash of yuzu and lemon juice, cooked to medium rare. Served over crispy Brussels sprouts that are flash fried and seasoned simply with salt, finished with micro red shiso and Tokyo negi. Rich and savory, definitely on the spicy side, with just enough citrus to cut through and keep the focus on the wild king salmon.",
+      "spielShort": "Wild king salmon, Sichuan coriander rubbed and pan-seared in shiso rocoto butter to medium rare, served with crispy Brussels sprouts. Micro red shiso, Tokyo negi.",
+      "cookingMethod": [
+        "Season: Rub salmon with Sichuan coriander blend",
+        "Sear: Pan-sear in shiso rocoto butter with yuzu and lemon juice",
+        "Cook: To medium rare",
+        "Plate: Over crispy Brussels sprouts",
+        "Finish: Micro red shiso, Tokyo negi"
+      ],
+      "buildPlating": [
+        "Base: Crispy Brussels sprouts (flash fried, seasoned with salt only)",
+        "Salmon: On top of Brussels sprouts",
+        "Pan Sauce: Drizzle the remainder of the shiso rocoto butter with yuzu and lemon juice from the pan over the salmon and Brussels sprouts",
+        "Garnish: Micro red shiso, Tokyo negi"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Wild Alaskan king salmon, sashimi grade"]},
+        {"label": "Rub", "items": ["Sichuan coriander"]},
+        {"label": "Shiso Rocoto Butter (house-made compound butter stick)", "items": ["Rocoto sriracha", "Wasabi", "Chopped shiso", "Butter"]},
+        {"label": "In the Pan (added separately, NOT in the butter)", "items": ["Yuzu juice", "Lemon juice"]},
+        {"label": "Crispy Brussels Sprouts", "items": ["Flash fried, seasoned with salt only"]},
+        {"label": "Garnish", "items": ["Micro red shiso", "Tokyo negi"]}
+      ],
+      "saucePrep": {
+        "shisoRocotoButter": {
+          "description": "House-made compound butter stick (not a sauce)",
+          "ingredients": ["Rocoto sriracha", "Wasabi", "Chopped shiso", "Butter"],
+          "note": "Yuzu juice and lemon juice are added separately in the pan during cooking, they are NOT part of the butter itself."
+        },
+        "rocotoSriracha": {
+          "description": "Component of Shiso Rocoto Butter",
+          "ingredients": ["Fresh rocoto peppers (whole peppers, not paste)", "Fresno peppers", "Garlic", "Palm sugar", "Salt", "Vinegar"],
+          "process": [
+            "Combine rocoto peppers, Fresno peppers, garlic, palm sugar, salt in a container",
+            "Let sit 3-4 days (rest period, not fermentation)",
+            "Add vinegar",
+            "Blend to a smooth purée",
+            "Boil to reduce, 30-45 minutes, until it becomes rocoto sriracha"
+          ],
+          "note": "Uses fresh rocoto and Fresno peppers (not fire-grilled, that's for Tai Red Pepper sauce)."
+        }
+      },
+      "allergenNotes": ["Fish (salmon)", "Dairy (butter)", "Nightshade (rocoto, Fresno peppers)"],
+      "flavorNotes": "Rich and savory from the compound butter. Definitely on the spicy side from rocoto sriracha. Herbaceous shiso note. Citrus-bright from yuzu and lemon juice added in pan. Crispy, salty Brussels sprouts for texture and balance.",
+      "notes": "Sashimi grade salmon cooked to medium rare. Shiso rocoto butter is a house-made compound butter stick.",
+      "serverNotes": {
+        "important": "Rocoto and Shiso Serrano are on the menu. Yuzu Soy is off-menu.",
+        "guestInteraction": [
+          "It is sashimi grade salmon and cooked to medium rare, so it will be slightly raw in the middle.",
+          "For the King Salmon specifically, you have three spice options to choose from.",
+          "Often let the guest react to the options first, that helps narrow down which one to explain in more detail."
+        ],
+        "spiceOptions": {
+          "rocoto": "Definitely on the spicy side",
+          "shisoSerrano": "Gentle, flavorful spice",
+          "yuzuSoy": "No spice option (with crispy spinach)"
+        },
+        "rubs": {
+          "rocoto": "Szechuan coriander rub",
+          "shisoSerrano": "Simple salt and pepper rub",
+          "yuzuSoy": "Simple salt and pepper rub"
+        },
+        "wellDoneRequest": "Technically it is possible to cook it well done by asking the chef, but usually say we do not do it well done. If they really want well done salmon, guide them to the Salmon Teriyaki instead."
+      }
+    },
+
+    {
+      "id": "wild_king_salmon_shiso_serrano",
+      "name": "Wild King Salmon Shiso Serrano",
+      "category": "HOT",
+      "menuStatus": "on_menu",
+      "station": "Sauté",
+      "spielFull": "Wild king salmon, sashimi grade, salt and pepper rubbed and pan-seared in butter to medium rare. It sits over shimeji and enoki mushrooms tossed in our sesame onion salsa. We finish it with shiso serrano sauce, our jalapeño dressing layered with fresh shiso and serrano, and top it with micro Japanese red shiso. Gentle heat rather than big spice, so it really highlights the flavor of the sashimi-grade wild king salmon.",
+      "spielShort": "Wild king salmon, pan-seared in butter to medium rare, over shimeji and enoki mushrooms in sesame onion salsa, finished with shiso serrano jalapeño dressing and micro red shiso.",
+      "cookingMethod": [
+        "Season: Salt and pepper rub",
+        "Sear: Pan-sear in butter to medium rare",
+        "Plate: Over shimeji and enoki mushrooms in Nobu salsa",
+        "Finish: Shiso serrano sauce, micro red shiso"
+      ],
+      "buildPlating": [
+        "Base: Shimeji and enoki mushrooms tossed in Nobu salsa (sesame onion salsa)",
+        "Salmon: On top of mushrooms",
+        "Sauce: Shiso serrano sauce finished on top (added after plating)",
+        "Garnish: Micro red shiso"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Wild Alaskan king salmon, sashimi grade"]},
+        {"label": "Rub", "items": ["Salt and pepper"]},
+        {"label": "Cook", "items": ["Pan-seared in butter to medium rare"]},
+        {"label": "Mushroom Base, Nobu Salsa (Sesame Onion Salsa)", "items": ["Shimeji mushrooms", "Enoki mushrooms", "Nobu Salsa: Maui onion, ginger, garlic, soy sauce, rice vinegar, sesame oil, yuzu juice, ichimi togarashi, sugar"]},
+        {"label": "Shiso Serrano Sauce (Jalapeño Dressing with Shiso & Serrano)", "items": ["Jalapeño dressing (grapeseed oil, rice vinegar, jalapeño, garlic, serrano)", "Chopped fresh shiso", "Chopped serrano"]},
+        {"label": "Garnish", "items": ["Micro red shiso"]}
+      ],
+      "allergenNotes": ["Fish (salmon)", "Dairy (butter)", "Soy (Nobu salsa)", "Sesame (Nobu salsa)", "Nightshade (jalapeño, serrano)"],
+      "flavorNotes": "Gentle heat rather than big spice. Citrus-soy, gingery warmth from Nobu salsa. Fresh herb bite from shiso. Clean serrano lift. Highlights the flavor of the sashimi-grade wild king salmon.",
+      "notes": "Jalapeño dressing does NOT contain soy, allergen update from prior notes. Shiso Serrano is the same sauce used on King Crab Shiso Serrano, it is basically the Shiso Serrano Jalapeño dressing.",
+      "serverNotes": {
+        "important": "Rocoto and Shiso Serrano are on the menu. Yuzu Soy is off-menu.",
+        "guestInteraction": [
+          "It is sashimi grade salmon and cooked to medium rare, so it will be slightly raw in the middle.",
+          "For the King Salmon specifically, you have three spice options to choose from.",
+          "Often let the guest react to the options first, that helps narrow down which one to explain in more detail."
+        ],
+        "spiceOptions": {
+          "rocoto": "Definitely on the spicy side",
+          "shisoSerrano": "Gentle, flavorful spice",
+          "yuzuSoy": "No spice option (with crispy spinach)"
+        },
+        "rubs": {
+          "rocoto": "Szechuan coriander rub",
+          "shisoSerrano": "Simple salt and pepper rub",
+          "yuzuSoy": "Simple salt and pepper rub"
+        },
+        "wellDoneRequest": "Technically it is possible to cook it well done by asking the chef, but usually say we do not do it well done. If they really want well done salmon, guide them to the Salmon Teriyaki instead."
+      }
+    },
+
+    {
+      "id": "wild_king_salmon_yuzu_soy",
+      "name": "Wild King Salmon Yuzu Soy",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Sauté",
+      "spielFull": "Wild king salmon, sashimi grade, salt and pepper dusted and pan-seared in butter to medium rare. Dressed with our signature citrus yuzu soy and finished with crispy spinach, garlic chips, a touch of sesame seeds, and pink peppercorn for gentle spice and texture. This is one of our classic Nobu signature dishes that used to be on the menu, very simple and clean, all to highlight the flavor of the wild king salmon.",
+      "spielShort": "Wild king salmon, salt and pepper rubbed, pan-seared in butter to medium rare, dressed with yuzu soy, finished with crispy spinach, garlic chips, sesame seeds, and pink peppercorn. Classic Nobu signature.",
+      "cookingMethod": [
+        "Season: Salt and pepper dust the salmon",
+        "Sear: Pan-sear in butter to medium rare",
+        "Dress: Yuzu soy dressed over salmon",
+        "Garnish: Top with crispy spinach, garlic chips, sesame seeds, pink peppercorn"
+      ],
+      "buildPlating": [
+        "Salmon: Pan-seared in butter to medium rare",
+        "Sauce: Yuzu soy dressed over salmon",
+        "Garnish: Crispy spinach, crispy garlic chips, sesame seeds, pink peppercorn"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Wild Alaskan king salmon, sashimi grade"]},
+        {"label": "Rub", "items": ["Salt and pepper"]},
+        {"label": "Cook", "items": ["Pan-seared in butter to medium rare"]},
+        {"label": "Sauce", "items": ["Yuzu soy (signature citrus soy)"]},
+        {"label": "Garnish", "items": ["Crispy spinach", "Crispy garlic chips", "Sesame seeds", "Pink peppercorn"]}
+      ],
+      "allergenNotes": ["Fish (salmon)", "Dairy (butter)", "Soy (yuzu soy)", "Sesame (sesame seeds)"],
+      "flavorNotes": "Bright yuzu citrus. Savory soy. Aromatic crunch from crispy spinach and garlic chips. Pink peppercorn adds gentle spice and texture. Very simple and clean, all about the wild king salmon.",
+      "notes": "This is one of our classic Nobu signature dishes that used to be on the menu, very simple and clean, all to highlight the flavor of the wild king salmon. It is sashimi grade and cooked to medium rare.",
+      "serverNotes": {
+        "important": "Rocoto and Shiso Serrano are on the menu. Yuzu Soy is off-menu.",
+        "guestInteraction": [
+          "It is sashimi grade salmon and cooked to medium rare, so it will be slightly raw in the middle.",
+          "For the King Salmon specifically, you have three spice options to choose from.",
+          "Often let the guest react to the options first, that helps narrow down which one to explain in more detail."
+        ],
+        "spiceOptions": {
+          "rocoto": "Definitely on the spicy side",
+          "shisoSerrano": "Gentle, flavorful spice",
+          "yuzuSoy": "No spice option (with crispy spinach)"
+        },
+        "rubs": {
+          "rocoto": "Szechuan coriander rub",
+          "shisoSerrano": "Simple salt and pepper rub",
+          "yuzuSoy": "Simple salt and pepper rub"
+        },
+        "wellDoneRequest": "Technically it is possible to cook it well done by asking the chef, but usually say we do not do it well done. If they really want well done salmon, guide them to the Salmon Teriyaki instead."
+      }
+    },
+
+    {
+      "id": "short_rib_hearts_of_palm",
+      "name": "Short Rib with Hearts of Palm Purée",
+      "category": "HOT",
+      "menuStatus": "on_menu",
+      "station": "Grill",
+      "spielFull": "We slow-cook the short rib for 48 hours, dust it with our 11-spice blend, and finish it on the grill so the spices toast and the edges pick up a gentle char. It goes into the pan with shimeji and our sweet onion soy, and we glaze it until the meat is glossy and seasoned end to end. We plate over a silky hearts of palm purée with caramelized shallots, then finish with pickled asparagus for brightness.",
+      "spielShort": "48-hour sous vide short rib with our house 11-spice rub, grilled for a light char, then glazed in sweet onion soy with shimeji mushrooms. It sits on a silky hearts of palm purée with caramelized shallots, finished with pickled asparagus.",
+      "cookingMethod": [
+        "Sous vide: 48-hour sous vide short rib (no seasoning during sous vide)",
+        "Rub: 11-spice dry rub applied after sous vide",
+        "Grill: Finish on grill for light sear marks so the spices toast",
+        "Pan finish: Glaze in pan with sweet onion soy and shimeji mushrooms until sauce lightly coats and shines",
+        "Plate: Set over hearts of palm purée and caramelized shallots",
+        "Top: Pickled asparagus and shimeji from the pan"
+      ],
+      "buildPlating": [
+        "Hearts of palm purée",
+        "Caramelized shallots (layered over purée)",
+        "Short rib with pan sauce and shimeji",
+        "Pickled asparagus on top"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Short rib (48-hour sous vide)"]},
+        {"label": "11-Spice Dry Rub", "items": ["Coriander seeds", "White pepper", "Nutmeg", "Fennel pollen", "Ginger", "Curry", "Cumin seeds", "Cloves", "Cayenne pepper", "Paprika", "Star anise", "Cinnamon"]},
+        {"label": "Sweet Onion Soy (Glaze)", "items": ["Sugar", "Ginger", "Green onions", "Maui onion", "Fuji apple", "Jalapeño", "Garlic", "Soy sauce", "Sake", "Sesame oil", "Sesame seeds"]},
+        {"label": "Hearts of Palm Purée", "items": ["Hearts of palm (oven roasted, then blended)", "Chicken stock", "Salt"]},
+        {"label": "Caramelized Shallots", "items": ["Shallots", "Turmeric oil", "Tarragon", "Salt", "Pepper", "Chinese wine"]},
+        {"label": "Pan Finish", "items": ["Shimeji mushrooms"]},
+        {"label": "Garnish", "items": ["Pickled asparagus (specific to this dish)"]}
+      ],
+      "allergenNotes": ["Soy (soy sauce in sweet onion soy)", "Sesame (sesame oil, sesame seeds)", "Nightshade (jalapeño, paprika, cayenne)", "Gluten (soy sauce)"],
+      "flavorNotes": "Deep beefy richness from sous vide and grill. Sweet-savory gloss from sweet onion soy (Maui onion, Fuji apple, fresh ginger, garlic, sesame, a splash of sake, mild jalapeño aroma). Earthy mushroom notes from shimeji. Bright pop from pickled asparagus. Silky base from hearts of palm purée with sweet caramelized shallots. 11-spice rub is warm and aromatic, not hot.",
+      "notes": "48-hour sous vide process. 11-spice rub is warm and aromatic, not hot."
+    },
+
+    {
+      "id": "king_crab_uni",
+      "name": "King Crab Uni (Uni Rocoto Butter)",
+      "category": "HOT",
+      "menuStatus": "on_menu",
+      "station": "Grill",
+      "spielFull": "We have an Alaskan king crab leg that is fire roasted and glazed with our uni rocoto butter. You really taste the sweet, oceanic uni, and the Peruvian rocoto chili gives a gentle heat while the butter adds richness. On the side there is a chilled king crab meat salad with root vegetables tossed in a spicy fermented miso vinaigrette, so you get a hot, rich king crab leg and a cool, tangy crab salad to balance it out.",
+      "spielShort": "Fire-roasted king crab leg with uni rocoto butter, served with a chilled crab and root vegetable salad in a spicy miso vinaigrette.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Crab leg: Whole Alaskan king crab leg, arrives cooked, then fire roasted. Brushed and glazed with uni rocoto butter during roasting. Finished with chopped chives.",
+        "Salad: Chilled crab and root vegetable salad. Tossed in a spicy miso (gochujang) vinaigrette. Plated alongside the crab leg."
+      ],
+      "ingredientGroups": [
+        {"label": "Crab Leg & Glaze", "items": ["Alaskan king crab leg (pre-cooked, fire roasted to order)"]},
+        {"label": "Uni Rocoto Butter", "items": ["Uni", "Rocoto sriracha", "Yuzu kosho", "Yellow anticucho", "Light soy sauce", "Lime juice", "Yuzu juice", "Butter", "Black pepper"]},
+        {"label": "Chilled Crab & Root Vegetable Salad", "items": ["King crab meat", "Root vegetables"]},
+        {"label": "Gochujang Vinaigrette", "items": ["Gochujang", "Sesame tosazu (sesame oil + tosazu)", "Tosazu (soy sauce, rice vinegar, bonito, mirin, sugar)"]},
+        {"label": "Finish", "items": ["Chives (finely chopped)"]}
+      ],
+      "allergenNotes": ["Shellfish (king crab)", "Fish (bonito in tosazu)", "Dairy (butter in uni rocoto butter)", "Soy (soy sauce, yellow anticucho, tosazu, gochujang)", "Gluten (from regular soy sauce)", "Sesame (sesame oil / sesame tosazu)", "Allium (garlic, chives)", "Nightshade (rocoto, aji amarillo, gochujang)"],
+      "flavorNotes": "Sweet, meaty king crab with light char from the fire roast. Uni rocoto butter is rich, oceanic, and gently spicy with a bit of citrus lift. Spicy miso (gochujang) vinaigrette gives the crab salad a tangy, savory heat. Hot crab and chilled salad create a nice temperature and texture contrast.",
+      "notes": "Fire roasted king crab with two components: hot glazed leg and cold crab salad."
+    },
+
+    {
+      "id": "king_crab_shiso_serrano",
+      "name": "King Crab Shiso Serrano",
+      "category": "HOT",
+      "menuStatus": "on_menu",
+      "station": "Grill",
+      "spielFull": "We have an Alaskan king crab leg that is seasoned with black pepper, tossed in clarified butter, and fire roasted. Right before it leaves the kitchen, we spoon over our shiso serrano jalapeño dressing, which is garlicky with good acidity and a mild, clean chili heat from the fresh shiso and serrano. On the side there is a chilled king crab meat salad with enoki mushrooms and sugar snap peas tossed in a sesame onion salsa. So you get sweet, meaty crab with a garlicky, vinegary shiso and chili dressing, and a cool, mild crab salad next to it.",
+      "spielShort": "Alaskan king crab leg fire roasted in clarified butter, finished with shiso serrano jalapeño dressing, served with a chilled crab, enoki, and sugar snap pea salad in a sesame onion salsa.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Crab leg: Alaskan king crab leg, seasoned with black pepper. Tossed in clarified butter. Topped with shiso serrano jalapeño dressing right before it leaves the kitchen.",
+        "Salad: Chilled crab meat. Enoki mushrooms. Sugar snap peas. All tossed in sesame onion salsa (Nobu salsa)."
+      ],
+      "ingredientGroups": [
+        {"label": "Crab Leg", "items": ["Alaskan king crab leg", "Black pepper", "Clarified butter"]},
+        {"label": "Shiso Serrano Dressing", "items": ["Jalapeño dressing (Grapeseed oil, Rice vinegar, Jalapeño, Serrano, Garlic)", "Chopped shiso", "Extra fresh serrano (chopped)"]},
+        {"label": "Chilled Crab Salad", "items": ["Crab meat", "Enoki mushrooms", "Sugar snap peas"]},
+        {"label": "Sesame Onion Salsa (Nobu salsa)", "items": ["Maui onion", "Ginger", "Garlic", "Soy sauce", "Rice vinegar", "Sesame oil", "Yuzu juice", "Ichimi togarashi", "Sugar"]}
+      ],
+      "allergenNotes": ["Shellfish (king crab)", "Soy (soy sauce in sesame onion salsa)", "Gluten (from regular soy sauce)", "Sesame (sesame oil in sesame onion salsa)", "Allium (garlic, Maui onion)", "Nightshade (jalapeño, serrano, ichimi togarashi)"],
+      "flavorNotes": "Sweet, meaty crab with light richness from clarified butter. Shiso serrano dressing is garlicky, lightly acidic, and has a mild, clean chili heat. Sesame onion salsa is more about sesame, soy, and onion than citrus; it coats the salad with flavor without feeling heavy. Overall: hot, cold contrast with sweet crab, mild chili heat, and a cool, vegetable-forward crab salad.",
+      "notes": "Fire roasted king crab with shiso serrano dressing."
+    },
+
+    {
+      "id": "umami_chicken",
+      "name": "Umami Chicken",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Grill",
+      "spielFull": "We have a bone-in Jidori chicken breast marinated in our vegetable umami blend - kombu seaweed, shiitake mushroom, soy, and aromatics - then grilled until the outside gets nicely blackened so the marinade caramelizes into a smoky umami crust. It's served over roasted vegetables marinated in a light ginger vinegar spice mix to keep them bright and fresh. We top it with a refreshing kohlrabi salsa and finish with hajikami pickled ginger.",
+      "spielShort": "Bone in Jidori chicken breast marinated in kombu, shiitake, and soy vegetable umami blend, grilled and blackened, served with roasted vegetables, kohlrabi salsa, and hajikami pickled ginger.",
+      "cookingMethod": [
+        "Marinate chicken in vegetable umami blend",
+        "Grill until the outside gets nicely blackened so the marinade caramelizes into a smoky umami crust",
+        "Prepare roasted vegetables marinated in light ginger vinegar spice mix",
+        "Top with kohlrabi salsa",
+        "Finish with hajikami pickled ginger"
+      ],
+      "buildPlating": [
+        "Protein: Bone-in Jidori chicken breast, marinated and grilled until blackened on the outside and juicy inside",
+        "Vegetable base: Cabbage, celery, and carrots pickled in a light ginger vinegar spice marinade, roasted before service",
+        "Topping: Kohlrabi salsa spooned over/around the chicken",
+        "Finish: Hajikami pickled ginger spear on the plate"
+      ],
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Bone-in Jidori chicken breast"]},
+        {"label": "Umami Vegetable Marinade", "items": ["Garlic", "Ginger", "Leeks", "Onion", "Carrot", "Celery", "Asparagus", "Broccoli", "Red bell pepper", "Shiitake mushroom", "Kombu", "Green onion", "Cilantro", "Parsley", "Togarashi", "Salt", "Soy (soy sauce / soy salt)"]},
+        {"label": "Kohlrabi Salsa", "items": ["Kohlrabi, minced", "Ginger", "Chive", "Ama toza (rice vinegar, sugar, salt, soy sauce, bonito, cayenne)"]},
+        {"label": "Roasted Vegetables", "items": ["Cabbage", "Celery", "Carrots"]},
+        {"label": "Veg Marinade for Sides", "items": ["Vinegar", "Ginger", "Togarashi", "Coriander seed", "Mustard seed", "White pepper"]},
+        {"label": "Finish", "items": ["Hajikami pickled ginger spear"]}
+      ],
+      "allergenNotes": ["Soy (soy/soy sauce in umami marinade and ama toza)", "Gluten (soy sauce)", "Fish (bonito in ama toza)", "Allium (garlic, onion, leeks, green onion, chive)", "Nightshade (togarashi, cayenne, red bell pepper)", "Celery (in both marinade and vegetable side)"],
+      "flavorNotes": "Deep savory 'umami' from kombu, shiitake, soy, and slow-marinated aromatics. Smoky, blackened grill crust but still juicy inside. Kohlrabi salsa is crisp, lightly spicy, and vinegar-bright with a little soy depth from ama toza. Roasted cabbage, celery, and carrots bring sweet, toasty notes plus a tangy ginger spice from the vinegar dressing. Overall: savory, smoky, and umami-driven with bright, crunchy, acidic elements to keep it light.",
+      "notes": "Marinated in kombu seaweed, shiitake mushroom, soy, and aromatics."
+    },
+
+    {
+      "id": "seafood_nabeyaki_udon",
+      "name": "Seafood Nabeyaki Udon",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Sauté",
+      "spielFull": "We have a seafood nabeyaki udon that's off the menu - a traditional Japanese hot pot with thick white udon noodles, assorted seafood including white fish, salmon, scallop, and shrimp, plus Japanese mushrooms in a savory soy sauce broth infused with bonito and kombu seaweed. We drop in a whole egg to gently poach in the broth, then finish with crispy shrimp tempura on top. It's very comforting and warming.",
+      "spielShort": "Seafood nabeyaki udon - traditional Japanese hot pot with thick udon noodles, assorted seafood, Japanese mushrooms, poached egg, finished with shrimp tempura in savory soy sauce broth infused with bonito and kombu seaweed",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Hot pot & broth: Build broth directly in the hot pot with dashi (bonito and kombu base), soy sauce, mirin",
+        "Noodles: Add thick white udon noodles into the broth",
+        "Seafood: Add 2 pieces white fish, 2 pieces salmon, 1 scallop, 1 shrimp",
+        "Mushrooms: Add shimeji, maitake, enoki mushrooms",
+        "Egg: Drop a whole egg into the hot pot so it gently poaches in the broth",
+        "Finish & garnish: Top with 1 crispy shrimp tempura, sliced scallion (negi), mitsuba",
+        "Service: Serve directly in the hot pot, clearly warn the guest it is very hot"
+      ],
+      "ingredientGroups": [
+        {"label": "Noodles", "items": ["Udon noodles (thick white wheat noodles)"]},
+        {"label": "Seafood", "items": ["White fish ×2", "Salmon ×2", "Scallop ×1", "Shrimp ×1 (in broth)", "Shrimp tempura ×1 (on top)"]},
+        {"label": "Mushrooms", "items": ["Shimeji mushrooms", "Maitake mushrooms", "Enoki mushrooms"]},
+        {"label": "Broth", "items": ["Dashi (water, kombu seaweed, bonito flakes)", "Soy sauce", "Mirin"]},
+        {"label": "Egg", "items": ["Whole egg"]},
+        {"label": "Garnish", "items": ["Shrimp tempura", "Scallion (negi)", "Mitsuba (Japanese herb)"]},
+        {"label": "Tempura Batter (house standard)", "items": ["Wheat flour", "Ice water", "Egg"]}
+      ],
+      "allergenNotes": ["Fish (white fish, salmon, bonito in dashi)", "Shellfish (shrimp, scallop, shrimp tempura)", "Gluten (udon noodles, regular soy sauce, tempura batter)", "Soy (soy sauce in broth)", "Egg (whole egg; egg in tempura batter)"],
+      "flavorNotes": "Very comforting, savory, warming noodle soup that feels like a Japanese winter hot pot in a bowl.",
+      "notes": "Hot pot and handle are very hot, always warn the guest. Traditional Japanese hot pot with thick white udon noodles."
+    },
+
+    {
+      "id": "king_crab_udon",
+      "name": "King Crab Udon",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Sauté",
+      "spielFull": "We have a king crab udon that is off the menu. It is a pan-glazed king crab udon with white onion and bok choy sautéed in butter. Then we add king crab, build a sweet soy garlic dashi sauce in the pan, and toss thick udon noodles through so they are fully coated in the sauce. From there we transfer everything into a preheated hot pot so it arrives sizzling. We finish with scallion and a Japanese seven-hot spice blend, then drop a raw jidori egg yolk on top for you to break and mix through the noodles for a rich, creamy finish.",
+      "spielShort": "Pan-glazed king crab udon with bok choy and white onion in a sweet soy garlic dashi butter sauce, served sizzling in a hot pot with Japanese seven-hot spice, scallion, and a raw jidori egg yolk to mix through for a rich, creamy finish.",
+      "cookingMethod": [
+        "Start: Put butter in a pan",
+        "Cook vegetables: Add white onion and bok choy to the pan",
+        "Add protein: Add king crab after vegetables",
+        "Build sauce: Add garlic, soy sauce, mirin, dashi to give it a gentle coat",
+        "Add noodles: Add udon to the pan, it becomes more of a stir-fry udon noodle",
+        "Prep hot pot: Separately heat up a hot pot until it is as hot as it gets, sizzling",
+        "Set hot pot: Set the hot pot on the plate",
+        "Transfer: Transfer all of the udon, king crab, white onion, bok choy mix with the garlic soy butter into the hot pot so it sizzles",
+        "Finish: Drop a raw jidori egg yolk on top",
+        "Garnish: Sprinkle shichimi and scallion"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Alaskan king crab"]},
+        {"label": "Noodles", "items": ["Udon noodles (half portion)"]},
+        {"label": "Vegetables", "items": ["White onion", "Bok choy"]},
+        {"label": "Garlic Sweet Soy Sauce", "items": ["Dashi (water, kombu kelp, bonito)", "Garlic", "Soy sauce", "Mirin", "Butter"]},
+        {"label": "Egg", "items": ["Raw jidori egg yolk (free-range)"]},
+        {"label": "Garnish", "items": ["Scallion", "Shichimi togarashi"]}
+      ],
+      "allergenNotes": ["Shellfish (king crab)", "Fish (dashi with bonito)", "Soy (soy sauce)", "Dairy (butter)", "Eggs (jidori egg yolk)", "Sesame (shichimi)", "Gluten (udon noodles, soy sauce)", "Alliums (garlic, onion, scallion)"],
+      "flavorNotes": "Pan-glazed king crab udon with white onion and bok choy sautéed in butter. Sweet soy garlic dashi sauce. Rich, creamy finish from egg yolk. Served sizzling in a hot pot.",
+      "notes": "Runner Script: 'Careful, very hot. Please break the egg yolk and mix it through the noodles for a creamy finish.' Garlic sweet soy sauce is unique to this dish, completely different from Short Rib Sauce. Tell the guest to mix everything, especially breaking the egg yolk, so the noodles take on a creamier texture, like a carbonara."
+    },
+
+    {
+      "id": "blue_prawn_salsa_verde",
+      "name": "Blue Prawn Salsa Verde",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Sauté",
+      "spielFull": "We have Caledonian blue prawns rubbed with our house spice blend, pan seared in butter, then deglazed with sake. We toss them in a yuzu kosho salsa verde - a Japanese citrus pepper salsa that's green, citrusy, spicy, and herb-driven. Served over charred peppery greens dressed with bonito ponzu. Has a good amount of spice.",
+      "spielShort": "Szechuan-coriander rubbed Caledonian blue prawn, pan seared in butter, deglazed with sake, then tossed in yuzu kosho salsa verde, over charred peppery greens dressed with bonito ponzu. Bright, savory, with a little heat.",
+      "cookingMethod": [
+        "Season: Rub blue prawns with Szechuan-coriander blend",
+        "Sear: Pan sear prawns in butter until just cooked",
+        "Deglaze: Add sake to hot pan to dissolve browned bits and build flavor",
+        "Toss: Toss prawns in yuzu kosho salsa verde",
+        "Char greens: Separately grill peppery greens (arugula, frisée, mizuna, watercress, butter lettuce) with olive oil to get light char",
+        "Dress greens: Toss charred greens with tosazu",
+        "Plate: Arrange greens, place 3 pieces of blue prawn on top",
+        "Finish: Top with micro cilantro"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Caledonian blue prawn (3 pieces per order)"]},
+        {"label": "Blue Prawn Spice Rub", "items": ["Green pepper", "White pepper", "Mustard seed", "Coriander seed", "Szechuan pepper", "Dry miso", "Green togarashi"]},
+        {"label": "Yuzu Kosho Salsa Verde", "items": ["Yuzu kosho paste", "Jalapeño dressing", "Cilantro"]},
+        {"label": "Jalapeño Dressing", "items": ["Grapeseed oil", "Rice vinegar", "Jalapeño", "Garlic", "Serrano"]},
+        {"label": "Peppery Greens", "items": ["Arugula", "Frisée", "Mizuna", "Watercress", "Butter lettuce"]},
+        {"label": "Tosazu", "items": ["Soy sauce", "Rice vinegar", "Bonito"]},
+        {"label": "Cooking", "items": ["Butter (for searing prawns)", "Sake (for deglazing)", "Olive oil (for grilling greens)"]},
+        {"label": "Garnish", "items": ["Micro cilantro"]}
+      ],
+      "allergenNotes": ["Shellfish (Caledonian blue prawn)", "Fish (bonito in tosazu)", "Soy (soy sauce in tosazu, dry miso in rub)", "Gluten (soy sauce, unless GF)", "Dairy (butter)", "Alliums (garlic)", "Mustard (mustard seed in rub)", "Nightshade (jalapeño, serrano, green togarashi)"],
+      "flavorNotes": "Bright citrus-pepper heat from yuzu kosho. Herbal jalapeño-cilantro notes. Light smoke from charred greens. Gentle tang from tosazu. Has a good amount of spice.",
+      "notes": "Same Caledonian blue prawn as Blue Prawn Salad. Blue Prawn Spice Rub is specific to blue prawn dishes, different from Fish Rub. Three pieces per order."
+    },
+
+    {
+      "id": "kurodai_black_snapper",
+      "name": "Kurodai Black Snapper",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Grill",
+      "spielFull": "Kurodai black snapper rubbed with our Szechuan coriander spice blend and grilled, served with roasted Brussels sprouts tossed in a tomatillo salsa, then finished with micro cilantro and a grilled lemon to squeeze over the top. It is similar to a branzino preparation, but the fish is a little firmer and the rub gives it a gentle Szechuan spice instead of an Mediterranean herbs.",
+      "spielShort": "Grilled Kurodai black snapper with Szechuan coriander rub, roasted Brussels sprouts in tomatillo salsa, finished with micro cilantro and a grilled lemon. Similar to branzino but a bit firmer with gentle Szechuan spice.",
+      "cookingMethod": [
+        "Season: Rub fish with Szechuan coriander blend",
+        "Grill: Grill Kurodai until just cooked",
+        "Prepare sprouts: Roast Brussels sprouts, toss in tomatillo salsa",
+        "Plate: Arrange fish with Brussels sprouts",
+        "Finish: Top with micro cilantro, serve with grilled lemon wedge to squeeze"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Kurodai black snapper (whole fish)"]},
+        {"label": "Szechuan Coriander Rub", "items": ["Szechuan pepper", "Black pepper", "Dry orange peel", "Cumin", "Cayenne", "Oregano", "Marjoram", "Thyme", "Parsley", "Dry shallot"]},
+        {"label": "Brussels Sprouts", "items": ["Roasted"]},
+        {"label": "Tomatillo Salsa", "items": ["Tomatillos", "Jalapeño", "Cilantro", "Kelp dressing", "Amatoza", "Salt", "Pepper", "Yuzu"]},
+        {"label": "Citrus", "items": ["Grilled lemon wedge"]},
+        {"label": "Garnish", "items": ["Micro cilantro"]}
+      ],
+      "allergenNotes": ["Fish (Kurodai)", "Soy (tomatillo salsa, amatoza)", "Nightshade (jalapeño in tomatillo salsa, cayenne in rub)"],
+      "flavorNotes": "Firm, delicate white fish. Earthy, smoky spice from Szechuan coriander rub. Bright, herbaceous tomatillo salsa with a touch of heat. Fresh cilantro accent. Citrus lift from grilled lemon.",
+      "notes": "Similar to a branzino preparation, but the fish is a little firmer and the rub gives it a gentle Szechuan spice instead of Mediterranean herbs. Brussels sprouts are roasted, not crispy flash-fried."
+    },
+
+    {
+      "id": "tai_red_pepper",
+      "name": "Tai Red Pepper",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Sauté",
+      "spielFull": "Japanese red snapper fillet rubbed with our Szechuan-coriander spice blend and pan seared in butter. We plate over a fire-roasted red pepper sauce, quite spicy with a nice smoky character, then add sautéed spinach tossed in a bright cherry tomato vinaigrette for a gentle acidity to balance the heat, and set the fish right on top. Firmer white fish with good heat, but well balanced from the vinaigrette and greens.",
+      "spielShort": "Japanese red snapper, Szechuan-coriander rubbed and pan seared in butter, plated over a spicy fire-roasted red pepper sauce with sautéed spinach in cherry tomato vinaigrette for a gentle acidity to balance the heat.",
+      "cookingMethod": [
+        "Season: Rub Japanese snapper fillet with Szechuan-coriander blend",
+        "Sear: Pan sear in butter until cooked through",
+        "Roast peppers: Grill red bell pepper and Fresno pepper until skins are fully blackened",
+        "Peel: Remove all blackened skin so only the tender roasted flesh remains",
+        "Blend: Purée with garlic, honey, fish sauce, light soy sauce, and rice wine vinegar until smooth",
+        "Plate sauce: Spoon roasted red pepper sauce as the base",
+        "Add spinach: Top with sautéed spinach tossed in cherry tomato vinaigrette",
+        "Finish: Set fish on top"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Japanese snapper fillet (Tai)"]},
+        {"label": "Szechuan Coriander Rub / Fish Rub", "items": ["Black pepper", "Szechuan pepper", "Dry orange peel", "Dry lemon peel", "Cumin", "Cayenne", "Oregano", "Marjoram", "Thyme", "Parsley", "Dry shallot"]},
+        {"label": "Roasted Red Pepper Sauce", "items": ["Fresno pepper", "Red bell pepper", "Garlic", "Light soy sauce", "Fish sauce", "Honey", "Rice wine vinegar"]},
+        {"label": "Sautéed Spinach", "items": []},
+        {"label": "Cherry Tomato Vinaigrette", "items": ["Cherry tomatoes", "Lime juice", "Tosazu", "Amatoza", "Fish sauce", "Serrano", "Salt", "Pepper"]},
+        {"label": "Cooking", "items": ["Butter (for pan searing fish)"]}
+      ],
+      "allergenNotes": ["Fish (snapper, fish sauce in sauce and vinaigrette, bonito in tosazu)", "Soy (light soy sauce, tosazu, amatoza)", "Gluten (soy sauce)", "Nightshade (Fresno, bell pepper, serrano, cayenne in rub)", "Alliums (garlic)"],
+      "flavorNotes": "Smoky, spicy red pepper sauce with a hint of sweetness to round out the heat. Bright, tangy cherry tomato vinaigrette for contrast. Warm, aromatic Szechuan-coriander spice on the fish. Quite spicy.",
+      "notes": "Roasting technique (charring until fully black, then peeling clean) gives the sauce its signature smoky character. Good guest line: 'Smoky red pepper sauce built from fire-roasted peppers.'"
+    },
+
+    {
+      "id": "nz_snapper",
+      "name": "New Zealand Snapper",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Tempura",
+      "spielFull": "We have a whole New Zealand snapper that is rubbed with our Szechuan coriander fish rub, lightly dusted in potato starch, then flash fried so the skin turns crisp while the flesh stays tender. On the side you get bok choy that is steamed first, then finished on the grill and tossed in a spicy cherry tomato vinaigrette for a bright, tangy contrast. It also comes with a caramelized lemon that is dusted with pink, white, and black peppercorns, marjoram, and a little sugar. When you squeeze that over at the table you get a smoky peppercorn aroma and it really opens up the flavor of the fish.",
+      "spielShort": "Whole New Zealand snapper rubbed with Szechuan coriander and flash fried crisp, served with steamed then grilled bok choy in cherry tomato vinaigrette and a peppercorn dusted caramelized lemon to squeeze over.",
+      "cookingMethod": [
+        "Season: Rub whole snapper with Szechuan-coriander blend",
+        "Dust: Coat with potato starch",
+        "Fry: Flash fry until crisp shell forms, flesh stays tender",
+        "Steam bok choy: Steam bok choy until just tender",
+        "Grill bok choy: Finish on the grill for a light char",
+        "Dress: Toss bok choy in cherry tomato vinaigrette",
+        "Prep lemon: Coat lemon with pink, white, and black peppercorns, marjoram, and sugar",
+        "Caramelize: Heat until sugar caramelizes",
+        "Plate: Plate fish with bok choy alongside, serve caramelized lemon for guest to squeeze"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Whole New Zealand snapper"]},
+        {"label": "Szechuan Coriander Rub / Fish Rub", "items": ["Black pepper", "Szechuan pepper", "Dry orange peel", "Dry lemon peel", "Cumin", "Cayenne", "Oregano", "Marjoram", "Thyme", "Parsley", "Dry shallot"]},
+        {"label": "Coating", "items": ["Potato starch"]},
+        {"label": "Bok Choy", "items": ["Steamed then grilled"]},
+        {"label": "Cherry Tomato Vinaigrette", "items": ["Cherry tomatoes", "Lime juice", "Tosazu", "Amatoza", "Fish sauce", "Serrano", "Salt", "Pepper"]},
+        {"label": "Caramelized Lemon", "items": ["Pink peppercorns", "White peppercorns", "Black peppercorns", "Marjoram", "Sugar"]}
+      ],
+      "allergenNotes": ["Fish (snapper, fish sauce in vinaigrette, bonito in tosazu)", "Soy (tosazu, amatoza)", "Gluten (soy sauce)", "Nightshade (serrano, cayenne in rub)"],
+      "flavorNotes": "Crisp, aromatic shell from the Szechuan-coriander rub and flash fry. Tender, flaky white fish inside. Bright, tangy, spicy cherry tomato vinaigrette on the bok choy. Caramelized lemon with warm peppercorn notes to finish.",
+      "notes": "Point out the caramelized lemon and tell guests they can squeeze it over the fish to open up the flavor. The fish is technically deep fried, not 'flash fried.' Bok choy is steamed first and then grilled, so it has both tenderness and a bit of char."
+    },
+
+    {
+      "id": "nz_snapper_honey_anticucho",
+      "name": "NZ Snapper Honey Anticucho",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Tempura",
+      "spielFull": "We have a whole New Zealand snapper that's rubbed with smoked paprika, ginger, garlic, and white pepper, deboned and cut into bite-size pieces, then coated in a light tempura batter and deep fried until crisp. We flash-fry Brussels sprouts and Fresno peppers separately, then toss everything together in our house honey anticucho sauce - a Peruvian-style sweet and spicy sauce with red and yellow anticucho, honey, and a touch of mayo for creaminess. It has a good kick that's balanced by the honey. We pile all the crispy pieces back over the fried head, spine, and tail so it still looks like a whole fish when it arrives.",
+      "spielShort": "Whole New Zealand snapper rubbed with smoked paprika, tempura fried in bite-size pieces, tossed with Brussels sprouts and Fresno peppers in honey anticucho sauce - sweet, spicy with a good kick, served over the whole fish frame",
+      "cookingMethod": [
+        "Rub whole fish: Season whole New Zealand snapper with smoked paprika, ginger, garlic, and white pepper",
+        "Debone and cut: Debone and cut the snapper into bite size pieces, reserving head, spine, and tail for plating",
+        "Batter and fry fish: Coat snapper pieces in a light tempura batter and deep fry until very crisp",
+        "Fry vegetables: Flash fry Brussels sprouts and Fresno peppers with no batter and no seasoning",
+        "Sauce and toss: Toss fish and vegetables together in honey creamy anticucho sauce",
+        "Plate on bones: Place the fried head, spine, and tail on the plate, then pile the dressed fish and vegetables back over and around the bones so it reads as a whole fish",
+        "Finish: Light smoked paprika finish"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Whole New Zealand snapper (deboned, cut into bite-size pieces, bones reserved for plating)"]},
+        {"label": "Snapper Rub", "items": ["Smoked paprika", "Garlic", "Ginger", "White pepper"]},
+        {"label": "Tempura Batter", "items": ["Tempura flour", "Eggs", "Water"]},
+        {"label": "Vegetables", "items": ["Brussels sprouts (flash fried, no batter, no seasoning)", "Fresno peppers (flash fried, no batter, no seasoning)"]},
+        {"label": "House Honey Anticucho Sauce", "items": ["Red anticucho", "Yellow anticucho", "Honey", "Mayonnaise"]},
+        {"label": "Red Anticucho", "items": ["Grapeseed oil", "Rice vinegar", "Sake", "Aji panka", "Garlic", "Salt", "Cumin", "Oregano"]},
+        {"label": "Yellow Anticucho", "items": ["Grapeseed oil", "Rice vinegar", "Soy sauce", "Aji amarillo", "Yuzu juice", "Lemon juice"]},
+        {"label": "Finish", "items": ["Smoked paprika powder (for garnish)"]}
+      ],
+      "allergenNotes": ["Fish (New Zealand snapper)", "Gluten (tempura batter, soy sauce in yellow anticucho)", "Eggs (tempura batter, mayonnaise)", "Soy (yellow anticucho, mayonnaise)", "Nightshade (smoked paprika, aji panka, aji amarillo, Fresno peppers)", "Alliums (garlic)"],
+      "flavorNotes": "Crispy tempura snapper pieces with a light, crunchy shell. Sweet and spicy honey creamy anticucho with a real kick, balanced by honey and mayo. Extra heat and aroma from Fresno pepper. Roasted, nutty notes from flash fried Brussels sprouts. Overall: sauce forward, sweet and spicy, big flavor, very snackable, presented like a whole fish.",
+      "notes": "Call out that it is the same whole New Zealand snapper, just in a dressed, crispy version that is more sauce driven. Mention that it is sweet and spicy with a good amount of kick. Already deboned and cut into bite size pieces, even though it is presented over the whole fish frame."
+    },
+
+    {
+      "id": "wagyu_gyoza",
+      "name": "Wagyu Gyoza",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Sauté",
+      "spielFull": "We have Nobu-style gyoza dumplings filled with Japanese A5 wagyu and our house-made kimchi. We pan-sear them for a crispy bottom, then steam to lock in all the juices. They're dressed with tosazu - our bonito soy vinegar - mixed with chili oil, and finished with chili flakes, crispy garlic chips, and Tokyo negi. You get rich wagyu, a little kimchi tang, and savory heat from the chili oil.",
+      "spielShort": "Nobu gyoza dumplings filled with A5 wagyu and house-made kimchi, pan-seared and steamed, dressed with tosazu chili oil, finished with chili flakes, garlic chips, Tokyo negi",
+      "cookingMethod": [
+        "Fill: A5 wagyu mixed with ginger, soy sauce, brown sugar, negi, and katakuriko, plus house-made kimchi folded in",
+        "Pan sear: Sear the bottoms in a hot pan until golden and crisp",
+        "Steam: Add liquid and cover to steam until cooked through, this captures the juices inside",
+        "Dress: Drizzle with tosazu chili oil",
+        "Garnish: Top with chili flakes, crispy garlic chips, and Tokyo negi"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "House-Made Kimchi Filling (ferment 3 days)", "items": ["Napa cabbage", "Daikon radish", "Negi", "Garlic", "Apple", "Pear", "Fish sauce", "Chili flakes", "Mochiko powder"]},
+        {"label": "Wagyu Filling", "items": ["Japanese A5 wagyu mixed with ginger, soy sauce, brown sugar, negi, katakuriko"]},
+        {"label": "Tosazu Chili Oil (for plating)", "items": ["Tosazu (rice vinegar, bonito, soy sauce)", "Chili oil", "Sesame oil"]},
+        {"label": "Garnishes", "items": ["Chili flakes", "Crispy garlic chips", "Tokyo negi"]}
+      ],
+      "allergenNotes": ["Soy (soy sauce in wagyu filling, tosazu)", "Gluten (wonton shell, soy sauce)", "Fish (fish sauce in kimchi, bonito in tosazu)", "Sesame (sesame oil in tosazu chili oil)"],
+      "flavorNotes": "Rich, umami-forward wagyu. Tangy, spicy kimchi tang. Savory heat from tosazu chili oil. Crispy, aromatic garlic chips for texture contrast. Fresh negi brightness.",
+      "notes": "Two-step cook is essential: pan sear then steam to capture the juices inside the gyoza rather than drying them out. House-made kimchi is fermented 3 days. Both wagyu and kimchi are inside each dumpling for a rich, complex filling. Wrapper is wonton shell, same as the tacos."
+    },
+
+    {
+      "id": "okinawa_sweet_potato",
+      "name": "Okinawa Japanese Purple Sweet Potato",
+      "category": "HOT",
+      "menuStatus": "special",
+      "station": "Grill",
+      "spielFull": "We have a Japanese purple sweet potato that we roast over oak wood chips so it picks up a delicate smoky aroma, then finish it in the broiler. After broiling, we toss it in clarified butter so the outside gets a light glaze and finish it with sea salt. It is naturally sweet and earthy with a gentle touch of smoke and a rich butter finish.",
+      "spielShort": "Japanese purple sweet potato roasted over oak, lightly glazed in clarified butter and finished with sea salt. Naturally sweet, earthy, and gently smoky.",
+      "cookingMethod": [
+        "Smoke: Roast Japanese purple sweet potato over oak wood chips to infuse smoke",
+        "Salamander Finish: Transfer to the salamander broiler to finish",
+        "Butter: Toss potatoes with clarified butter so each piece is glossy",
+        "Salt: Finish with sea salt (salt crystals remain visible)",
+        "Serve: Plate hot, directly from salamander, so butter glazes and aroma releases right as it hits the table"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Main", "items": ["Japanese purple sweet potato"]},
+        {"label": "Finish", "items": ["Clarified butter", "Sea salt", "Oak wood chips (for smoking)"]}
+      ],
+      "allergenNotes": ["Dairy (clarified butter)"],
+      "flavorNotes": "Naturally sweet and earthy from the Okinawan potato. Subtle, clean smoky aroma from oak wood. Rich finish from clarified butter. Bright salinity and crunch from finishing salt.",
+      "notes": "Serve hot for best texture and aroma. Pure potato, no sugar, no dressing, no caramelization. A 'salamander' is a high-heat overhead broiler (grills from above)."
+    },
+
+    {
+      "id": "karaage_chicken",
+      "name": "Karaage Chicken",
+      "category": "HOT",
+      "menuStatus": "weekend",
+      "station": "Tempura",
+      "spielFull": "Nobu-style Japanese fried chicken, half jidori chicken brined for 24 hours in spiced vodka with chili, garlic, and ginger, then air-dried for 24 hours before we coat it in our house-made harissa tempura batter and fry it extra crisp. Served with our house aji limo hot sauce, think of it like our Peruvian tabasco, vinegar-forward with serious heat. Six pieces, crisp outside, juicy inside. Only available on the weekend.",
+      "spielShort": "Half jidori chicken, 24-hour spiced vodka brine, air-dried 24 hours, coated in house-made harissa tempura batter, fried extra crisp. Served with house aji limo hot sauce, our Peruvian tabasco. Weekend special.",
+      "cookingMethod": [
+        "Wet brine 24 hours in spiced vodka brine, vodka helps spices penetrate deeper and keeps the meat moist",
+        "Rest 24 hours, brings the chicken to just the right moisture level to properly coat in the batter",
+        "Coat in house-made harissa tempura batter (made specifically for this dish)",
+        "Fry until extra crisp and golden",
+        "Serve with house aji limo hot sauce"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Half jidori chicken, 6 pieces (breast x3, thigh x1, leg x1, wing x1)"]},
+        {"label": "Spiced Vodka Brine (24 hours)", "items": ["Vodka", "Chili", "Garlic", "Ginger", "Salt", "Water"]},
+        {"label": "House-Made Harissa Tempura Batter (no egg)", "items": ["Tempura flour", "Harissa", "Marash", "Katakuriko", "Chile de arbol", "Cayenne"]},
+        {"label": "House Aji Limo Hot Sauce (our house-made tabasco)", "items": ["Aji limo", "Star anise", "Japanese salt", "Rice vinegar", "Garlic", "Palm sugar"]}
+      ],
+      "allergenNotes": ["Gluten (tempura flour, harissa)"],
+      "flavorNotes": "Extra crisp, golden exterior from the harissa tempura batter. Moist, tender, juicy meat inside from the spiced vodka brine. Warm, aromatic spice from harissa (chili, cumin, coriander, caraway). Layers of heat from marash, chile de arbol, cayenne. House aji limo hot sauce adds bright, vinegar-forward Peruvian heat.",
+      "notes": "Weekend special only, 48-hour process requires advance prep. Half jidori chicken, 6 pieces: More volume than typical dishes. Spiced vodka brine: Vodka carries the spice flavors deeper into the meat and keeps it moist and tender through frying."
+    },
+
+    {
+      "id": "scallop_bibimbap",
+      "name": "Scallop Bibimbap",
+      "category": "HOT",
+      "menuStatus": "weekend",
+      "station": "Grill",
+      "spielFull": "Scallop bibimbap is a rice dish served in a hot pot with seven grain rice. We grill the scallops and toss them in our creamy sesame chili sauce, then set them over rice in a hot pot with a new style oil blend of sesame and olive oil so the bottom turns crisp. We lightly torch the scallops in the hot pot for a gentle smoky note, then finish with our house made toasted seaweed rice seasoning, smelt egg, and chive. It is creamy and sesame forward with mild spice and a subtle smokiness, and it is one of our rare rice dishes that does not come from the sushi kitchen.",
+      "spielShort": "Grilled scallops with creamy sesame chili sauce over 7 grain rice in a hot pot, lightly torched, then finished with toasted seaweed rice seasoning, smelt egg, and chive.",
+      "cookingMethod": [
+        "Prepare rice: 2 cups white rice + 1 cup seven-grain rice cooked in rice cooker",
+        "Heat oil in hot pot: Add new-style oil blend (sesame and olive oil) to hot pot",
+        "Build base: Add rice to hot pot so bottom crisps",
+        "Grill scallops: 3 pieces scallops, each cut into 4 for a total of 12 bites",
+        "Toss in sauce: Grilled scallops tossed in creamy sesame chili sauce",
+        "Plate: Place scallops over rice in hot pot",
+        "Torch: Lightly torch the scallops in the pot to bring out the scallop flavor",
+        "Finish: Top with house-made toasted seaweed rice seasoning, masago, and chive"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Scallops (3 pieces, each cut into 4 bites = 12 total)"]},
+        {"label": "Rice Base", "items": ["White rice (2 cups)", "Seven-grain rice (1 cup)"]},
+        {"label": "Oil Blend (New-Style)", "items": ["Sesame oil", "Olive oil"]},
+        {"label": "Creamy Sesame Chili Sauce", "items": ["Mayonnaise", "Rocoto sriracha", "Sesame oil", "Aji panka pepper"]},
+        {"label": "Rocoto Sriracha", "items": ["Fresh rocoto peppers", "Red jalapeño", "Garlic", "Japanese salt", "Palm sugar", "White rice vinegar"]},
+        {"label": "House Toasted Seaweed Rice Seasoning", "items": ["Toasted nori seaweed", "Sesame seeds", "Sugar", "Salt", "Sesame oil"]},
+        {"label": "Garnish", "items": ["Masago (smelt egg roe)", "Chive"]}
+      ],
+      "allergenNotes": ["Shellfish (scallops)", "Sesame (sesame oil, house rice seasoning, creamy sauce)", "Eggs (mayonnaise in creamy sauce, masago fish egg)", "Nightshade (aji panka, rocoto peppers, red jalapeño in rocoto sriracha)", "Fish (masago)", "Soy (mayonnaise)"],
+      "flavorNotes": "Creamy and sesame forward with mild spice and a subtle smokiness. One of our rare rice dishes that does not come from the sushi kitchen.",
+      "notes": "Weekend only. Hot pot is extremely hot, advise guest. Tell the guest to mix everything well before eating, breaking up the scallops and lifting the crispy rice from the bottom. Rice production is approximately 8 orders per night."
+    },
+
+    {
+      "id": "mandarin_yuzu_kakigori",
+      "name": "Mandarin Yuzu Kakigori",
+      "category": "DESSERTS",
+      "menuStatus": "seasonal",
+      "station": "Pastry",
+      "spielFull": "Our Nobu-style Japanese kakigori is a citrus-forward shaved ice layered with mandarin and yuzu syrup, served over a scoop of vanilla gelato for a creamy base. Finished with dulce de leche pearls, mandarin crunch, and plain frozen mandarin and lemon segments, then drizzled again with mandarin yuzu syrup. It's bright and refreshing like traditional kakigori, but with more richness and texture from the gelato and crunchy toppings.",
+      "spielShort": "Nobu-style kakigori shaved ice layered with mandarin and yuzu syrup over vanilla gelato, topped with dulce de leche pearls, mandarin crunch, and frozen mandarin and lemon segments, finished with a final syrup drizzle.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Base: 1 scoop vanilla gelato (bottom of the bowl)",
+        "Topping layer 1: dulce de leche pearls + mandarin crunch + frozen mandarin and lemon segments",
+        "Shaved ice: kakigori shaved ice",
+        "Syrup layer: mandarin yuzu syrup over the shaved ice",
+        "Topping layer 2: repeat the same toppings",
+        "Final finish: final drizzle of mandarin yuzu syrup over the top"
+      ],
+      "ingredientGroups": [
+        {"label": "Base", "items": ["Vanilla gelato (1 scoop)"]},
+        {"label": "Shaved Ice and Syrup", "items": ["Kakigori shaved ice", "Mandarin yuzu syrup"]},
+        {"label": "Toppings", "items": ["Dulce de leche pearls", "Mandarin crunch", "Frozen mandarin segments (plain, no sugar)", "Frozen lemon segments (plain, no sugar)"]}
+      ],
+      "allergenNotes": ["Dairy (vanilla gelato)", "Gluten (dulce de leche pearls, mandarin crunch)"],
+      "flavorNotes": "Bright mandarin + yuzu citrus. Creamy vanilla depth from the gelato. Crunch and texture from pearls and mandarin crunch. Cold citrus pops from frozen mandarin and lemon segments.",
+      "notes": "Positioning line for guests: 'Traditional kakigori, but more dessert-like because of the gelato and crunchy toppings.' Refreshing, but slightly richer than traditional kakigori."
+    },
+
+    {
+      "id": "seiko_gani",
+      "name": "Seiko Gani",
+      "category": "ARCHIVED",
+      "menuStatus": "archived",
+      "station": "Sushi",
+      "spielFull": "We have one of our more traditional Japanese dishes called Seiko Gani, a Japanese female snow crab that is prized in winter for its rich, flavorful eggs. We boil the whole crab, chill it, then pick the meat and eggs and present them back in the shell. On one side you have delicate sweet crab meat, on the other rich crab eggs. It is finished with a chilled tosazu jelly, which is a classic Japanese bonito infused sweet soy vinegar jelly. The flavor is sweet, savory, and gently tangy, just enough to highlight the natural flavor of the crab without overpowering it. It is fully cooked and served chilled, with a small shiso flower on top as an accent.",
+      "spielShort": "Seasonal Japanese female snow crab, cooked and chilled, served back in the shell with sweet crab meat, rich crab eggs, and a light bonito infused sweet soy vinegar jelly.",
+      "cookingMethod": [
+        "Boil: Boil the whole Seiko Gani (female snow crab)",
+        "Chill: Chill the crab completely",
+        "Pick: Pick the meat and eggs from the shell",
+        "Present: Arrange crab meat on one side, crab eggs on the other, back in the shell",
+        "Finish: Add chilled tosazu jelly and shiso flower on top",
+        "Serve: Served cold"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Protein", "items": ["Seiko Gani, Japanese female snow crab (1 pc per order)"]},
+        {"label": "Tosazu Jelly", "items": ["600g dashi", "150g Shiragiku Su rice vinegar", "100g mirin", "100g light soy sauce (usukuchi)", "40g sugar", "15g gelatin"]},
+        {"label": "Garnish", "items": ["Shiso flower (1 pc)"]},
+        {"label": "Portion", "items": ["1 pc boiled Seiko Gani", "80g tosazu jelly", "1 pc shiso flower"]}
+      ],
+      "allergenNotes": ["Shellfish (crab)", "Fish (dashi)", "Soy (light soy sauce)", "Gluten (from light soy sauce)", "Pork (gelatin)"],
+      "flavorNotes": "No extra seasoning on the crab, pure crab flavor. Tosazu jelly: sweet, savory, and gently acidic rather than heavy. Delicate, sweet crab meat on one side. Rich crab eggs on the other side. Fully cooked, served cold.",
+      "notes": "Seasonal Japanese winter specialty. Female snow crab is prized for its rich roe and flavorful eggs. NO LONGER AVAILABLE."
+    },
+
+    {
+      "id": "silk_ember",
+      "name": "Silk & Ember",
+      "category": "ARCHIVED",
+      "menuStatus": "archived",
+      "station": "Bar",
+      "spielFull": "I wanted to mention one cocktail that is off the menu. It is called Silk and Ember and it drinks like a Nobu Malibu style Japanese holiday Old Fashioned. We start with Armagnac brandy, which is a very elegant, spice driven style of brandy, and stir it with a dry Japanese sake vermouth, a little allspice liqueur, and our Japanese black sugar syrup infused with cinnamon and clove that we make in house. Then we add a couple dashes of cocoa bitters and serve it over a single large Nobu stamped rock, finished with torched rosemary and a fresh cranberry on top.",
+      "spielShort": "Nobu-style Japanese holiday Old Fashioned. Armagnac instead of whiskey, sake vermouth, Jamaican allspice liqueur, house-made honey syrup with cinnamon and clove. Torch rosemary and a cranberry on top.",
+      "cookingMethod": [
+        "Pour 2 oz Cardinal du Four Armagnac into stirring tin",
+        "Add 0.5 oz Oka Kura Dry Bermutto",
+        "Add 0.25 oz St. Elizabeth Allspice Dram",
+        "Add 0.25 oz house-made Japanese honey syrup",
+        "Add 2 dashes Angostura Cocoa Bitters",
+        "Add draft ice & stir (30 seconds)",
+        "Strain",
+        "Add ice to glass (Nobu-stamped large cube)",
+        "Garnish, Rosemary Torch (3-5 seconds until smoking, perch cranberry on rosemary)"
+      ],
+      "buildPlating": null,
+      "ingredientGroups": [
+        {"label": "Spirit", "items": ["Cardinal du Four Armagnac Blanc (2 oz)"]},
+        {"label": "Modifiers", "items": ["Oka Kura Dry Bermutto (0.5 oz)", "St. Elizabeth Allspice Dram (0.25 oz)", "Japanese Honey Syrup (0.25 oz)", "Angostura Cocoa Bitters (2 dashes)"]},
+        {"label": "Japanese Honey Syrup (house-made)", "items": ["12.6 oz Momotaro Kuromitsu (Japanese black sugar syrup)", "2 oz Acqua Panna or filtered water", "6 Cinnamon Sticks", "2 Cloves"]},
+        {"label": "Garnish", "items": ["Rosemary Sprig (torched)", "Fresh Cranberry", "Nobu-stamped large ice cube"]}
+      ],
+      "allergenNotes": [],
+      "flavorNotes": "Rosemary smoke on the nose and rich baking spice, caramel and a hint of chocolate on the palate. All the holiday vibes in a spirit-forward Nobu Malibu holiday cocktail. Armagnac has a richer, spicier character than Cognac, making it perfect for holiday flavors.",
+      "notes": "Drinks like a Nobu Malibu style Japanese holiday Old Fashioned. Armagnac instead of whiskey. NO LONGER AVAILABLE, December Cocktail of the Month."
+    },
+
+    {
+      "id": "pumpkin_pie",
+      "name": "Pumpkin Pie",
+      "category": "ARCHIVED",
+      "menuStatus": "archived",
+      "station": "Pastry",
+      "spielFull": "House-baked pumpkin pie topped with white chocolate vanilla ganache, a smooth, creamy white chocolate vanilla pastry cream, and finished with pine nut pumpkin seed crumble sprinkled over the top. Served with espresso gelato on the side. Warm autumn spice balanced by a rich coffee note from the gelato. It's our seasonal special, available only for a short period.",
+      "spielShort": "House-baked pumpkin pie topped with white chocolate vanilla ganache and pine nut pumpkin seed crumble, served with espresso gelato on the side.",
+      "cookingMethod": null,
+      "buildPlating": [
+        "Pie: House-baked pumpkin pie",
+        "Topping: White chocolate vanilla ganache on top of the pie",
+        "Garnish: Pine nut pumpkin seed crumble sprinkled over the ganache and plate",
+        "Side: Espresso gelato set on a bed of crumble"
+      ],
+      "ingredientGroups": [
+        {"label": "Pie Crust (same as Apple Pie)", "items": ["AP flour", "Eggs", "Almond flour", "Butter", "Sugar"]},
+        {"label": "Pumpkin Filling", "items": ["AP flour", "Pumpkin", "Sugar", "Butter", "Pine nuts", "Coconut", "Almond"]},
+        {"label": "White Chocolate Vanilla Ganache", "items": ["Gelatin", "Sugar", "Cream", "Vanilla beans", "White chocolate"]},
+        {"label": "Pine Nut Pumpkin Seed Crumble", "items": ["Pine nuts", "Pumpkin seeds"]},
+        {"label": "Side", "items": ["Espresso gelato"]}
+      ],
+      "allergenNotes": ["Dairy (ganache, espresso gelato, butter)", "Eggs (pie crust)", "Tree nuts (pine nuts, almond flour, almond in filling)", "Gluten (AP flour in crust and filling)", "Coconut"],
+      "flavorNotes": "Warm pumpkin with autumn spice. Rich, creamy white chocolate vanilla ganache adds luxurious sweetness. Nutty, toasty crunch from pine nut pumpkin seed crumble. Bold espresso gelato provides a coffee-bitter contrast to the sweet pie.",
+      "notes": "Seasonal off-menu special. NO LONGER AVAILABLE."
+    }
+  ]
+}
